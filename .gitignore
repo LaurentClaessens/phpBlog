@@ -1,0 +1,6 @@
+*.swp
+*~
+.directory
+.kk.log
+session.vim
+*.bak
