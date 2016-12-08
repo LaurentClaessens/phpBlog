@@ -49,9 +49,9 @@ The varaibles that can change from one article to another are :
 - the text itsef;
 - the title
 - the date
-- the language (in <html xlm::lang=...>)
+- the language (in <html lm::lang=...>)
 
-  The text, the title and the date are variables. The remainign has to be 
+  The text, the title and the date are variables. The remaining has to be 
   automatically generated.
 
 
@@ -72,6 +72,7 @@ class article
     {
         $this->title=$t;
         $this->lang=$l;
+        $this->date=null;
     }
     
     function get_header()
@@ -88,6 +89,7 @@ class article
     }
 
     function get_title() { return $this->title; }
+    function set_date($d) { $this->date=$d; }
     
 }
 ?>            
