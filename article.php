@@ -28,6 +28,33 @@ feed.xml) and its URL.
                 See the line <title>ADD_HERE_YOUR_TITLE</title> in 
                 "generic_head.src"
 
+
+
+The layout of an article is :
+
+- The main text ins insdide <div>class="maintext"</div>
+
+            <div>class="maintext"
+            TITRE
+            date
+
+            text
+            </div>
+
+- Some generic informations on the right inside <div class="sidebar"> ... </div>
+  containing "Abonez-vous", précédent, suivant.
+
+
+The varaibles that can change from one article to another are :
+- the text itsef;
+- the title
+- the date
+- the language (in <html xlm::lang=...>)
+
+  The text, the title and the date are variables. The remainign has to be 
+  automatically generated.
+
+
 //*/
 
 
