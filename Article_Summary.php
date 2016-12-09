@@ -17,11 +17,25 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //*/
 
-require("article.php");
+class Article_Summary
+    /* This class represents the summary of an article in a RSS flux.
+     * title,link
+     *
+     * You do not need to instanciate this class since the class 'RSS_Flux'
+     * provides you a list of articles summaries from an xml file.
+    */
+{
+    function __constructor()
+    {
+        $this->title=null;
+        $this->link=null;
+    }
+    function set_title($t) { $this->title=$t; }
+    function set_link($l) { $this->link=$l; }
+    function get_title()  { return $this->title; }
+    function get_link()  { return $this->link; }
+    
+}
 
-$art=new Article("Whohò");
-$art->set_date("Décembre 2016");
-$art->set_content_file("page.html");
-$art->echo_page();
+?>
 
-?>            

@@ -58,7 +58,7 @@ The author writes an html file containing his text and the class
 
 //*/
 
-class article
+class Article
 {
     var $title;
     var $lang;
@@ -74,15 +74,22 @@ class article
         // - `content_file` is the file in which we search for
         //    the content of the article. This is an html file that will be
         //    imbbeded in the generated page.
+        // - `content_file` is the file containing the html code of the article's 
+        //    text. This is the code that the author has to write himself.
+        // - `surrounding_flux` is the flux which the artice belongs to.
+        //    It allows to get the history ofthe other articles.
+        //    It is supposed to be of type "RSS_Flux".
     {
         $this->title=$t;
         $this->lang=$l;
         $this->date=null;
         $this->content_file=null;
+        $this->surrounding_flux=null;
     }
 
     function set_date($d) { $this->date=$d; }
     function set_content_file($f) { $this->content_file=$f; }
+    function set_surrounding_flux($rss) { $this-> surrounding_flux = $rss;  }
     function get_date() { return $this->date;  }
     function get_lang() { return $this->lang;  }
     function get_title() { return $this->title; }
@@ -118,16 +125,10 @@ class article
     {
         echo'
             <div class="sidebar">
-            <ul>
-                <li>
+            <br>
             <a href="http://laurent.claessens-donadello.eu/rss.xml">Abonnez-vous au RSS.</a> 
-                </li>
-                <li>
-                    Précédent
-                </li>
-                <li>
-                    Suivant
-                </li>
+            <br>
+            <ul>
             </ul>
         </div>';
     }
@@ -164,10 +165,6 @@ class article
         $this->echo_header();
         $this->echo_body();
         echo "</html>";
-    }
-    function echo_heu()
-    {
-        echo 'bonjour';
     }
 }
 
