@@ -17,6 +17,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //*/
 
+require("Exceptions.php");
+
 /*
 
 The class 'article' represents an article in the blog. It is determined by its
@@ -51,12 +53,10 @@ The varaibles that can change from one article to another are :
 - the date
 - the language (in <html lm::lang=...>)
 
-  The text, the title and the date are variables. The remaining has to be 
-  automatically generated.
-
+The author writes an html file containing his text and the class 
+`article` takes care of putting it inside  <div class="maintext"></div>
 
 //*/
-
 
 class article
 {
@@ -74,22 +74,87 @@ class article
         $this->lang=$l;
         $this->date=null;
     }
+
+    function set_date($d) { $this->date=$d; }
+    function get_date() { return $this->date;  }
+    function get_lang() { return $this->lang;  }
+    function get_title() { return $this->title; }
     
     function get_header()
         // return the code <head>...</head>, with the correct title.
+        //
+        // If the file 'generic_head.src' does not exists, the 'str_replace' 
+        // function returns a 'count===0'. So the exception throwing works.
     {
         $generic_head = file_get_contents("generic_head.src");
         $count=null;
         $my_head = str_replace($this->title_hook,$this->get_title(),$generic_head,$count);
         if ($count!=1)
         {
-            throw new Exception("You have $count occurences of '$this->title_hook' in the generic header.");
+            throw new GenericHeadException("You have $count occurences of '$this->title_hook' in the generic header.");
         }
         return $my_head;
     }
+    function echo_header() 
+    { 
+        try
+        {
+            $head= $this->get_header(); 
+        }
+        catch (GenericHeadException $e)
+        {
+            $head="Problem with the header.".$e;
+        }
+        echo $head;
+    }
+    function echo_sidebar()
+    {
+        echo'
+            <div class="sidebar">
+            <ul>
+                <li>
+            <a href="http://laurent.claessens-donadello.eu/rss.xml">Abonnez-vous au RSS.</a> 
+                </li>
+                <li>
+                    Précédent
+                </li>
+                <li>
+                    Suivant
+                </li>
+            </ul>
+        </div>';
+    }
+    function get_text()
+    {
+        return "<p>This is the text</p>";
+    }
+    function echo_body()
+    // echoes the <body>...</body> part 
+    {
+        echo "<body>";
+        echo '<div class="maintext">';
+        echo "<h1>",$this->get_title(),"</h1>";
 
-    function get_title() { return $this->title; }
-    function set_date($d) { $this->date=$d; }
-    
+        echo "<small>",$this->get_date(),"</small>";
+
+        echo $this->get_text();
+
+        echo "</div>";
+        echo $this->echo_sidebar();
+        echo "</body>";
+    }
+
+    function echo_page()
+    {
+        echo "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang=",$this->get_lang(),">";
+        $this->echo_header();
+        $this->echo_body();
+        echo "</html>";
+    }
+    function echo_heu()
+    {
+        echo 'bonjour';
+    }
 }
+
 ?>            

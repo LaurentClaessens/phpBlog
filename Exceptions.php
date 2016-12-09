@@ -17,10 +17,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //*/
 
-require("article.php");
-
-$art=new article("Whohò");
-$art->set_date("Décembre 2016");
-$art->echo_page();
+class GenericHeadException extends Exception 
+{
+    public function __toString()
+    {
+        return $this->message;
+    }
+}
 
 ?>            
+
