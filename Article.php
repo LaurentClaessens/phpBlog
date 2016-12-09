@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //*/
 
 require("Exceptions.php");
+require("RSS_Flux.php");
 
 /*
 
@@ -89,7 +90,11 @@ class Article
 
     function set_date($d) { $this->date=$d; }
     function set_content_file($f) { $this->content_file=$f; }
-    function set_surrounding_flux($rss) { $this-> surrounding_flux = $rss;  }
+    function set_surrounding_flux($rss_file) 
+    { 
+        $this-> surrounding_flux = new RSS_Flux($rss_file)  ;  
+    }
+    function get_surrounding_flux() {return $this-> surrounding_flux;  }
     function get_date() { return $this->date;  }
     function get_lang() { return $this->lang;  }
     function get_title() { return $this->title; }
@@ -127,10 +132,15 @@ class Article
             <div class="sidebar">
             <br>
             <a href="http://laurent.claessens-donadello.eu/rss.xml">Abonnez-vous au RSS.</a> 
-            <br>
-            <ul>
-            </ul>
-        </div>';
+            <br>';
+        $articles_list=$this->get_surrounding_flux()->articles_list();
+        echo ' <ul> ';
+        foreach ($articles_list as $art)
+        {
+            echo "<li>",$art->title,"</li>";
+        }
+        echo '</ul>';
+        echo '</div>';
     }
     function get_content()
     {

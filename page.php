@@ -17,11 +17,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //*/
 
-require("article.php");
+require("Article.php");
 
 $art=new Article("Whohò");
 $art->set_date("Décembre 2016");
 $art->set_content_file("page.html");
+$art->set_surrounding_flux("Trss.xml");
 $art->echo_page();
 
 ?>            

@@ -46,28 +46,39 @@ class RSS_Flux
     This class helps you to navigate in this particular structure.
  */
 {
+   var $xml_filename;
 
-    function __constructor($xfn)
+    function __construct($xfn)
     {
-        $this->xml_filename=xfn;
+        $this->xml_filename=$xfn;
     }
     function get_xml_filename() { return $this->xml_filename; }
     function main_channel()
     {
-        $xml=simplexml_load_file( $this->get_xml_filename  );
+        $xml=simplexml_load_file( $this->get_xml_filename()  );
+        $a=$xml->channel;
         return $xml->channel;
     }
-    function article_list()
+    function articles_list()
     // return a list (array) of articles under the form of
     // instances of `Article_Summary`.
     {
-        $ans=array();
-        foreach ($this->main_channel()->item as $i)
+        $ans= array();
+        $items = $this->main_channel()->item;
+        if (count($items)==0)
+        {
+            $summary = new Article_Summary();
+            $summary->set_link("FAKE");
+            $summary->set_title("YOU HAVE A PROBLEM");
+
+            return array($summary);
+        }
+        foreach ($items as $i)
         {
             $title=$i->title;
             $url=$i->guid;
 
-            $summary = Article_Summary();
+            $summary = new Article_Summary();
             $summary->set_link($url);
             $summary->set_title($title);
             
