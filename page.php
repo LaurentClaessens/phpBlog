@@ -21,6 +21,7 @@ require("article.php");
 
 $art=new article("Whohò");
 $art->set_date("Décembre 2016");
+$art->set_content_file("page.html");
 $art->echo_page();
 
 ?>            

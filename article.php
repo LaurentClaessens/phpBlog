@@ -69,13 +69,20 @@ class article
         //    <title>...</title>
         // - $l (string) : the language to be included in
         //    <html xml:lang=... > </html>
+        //
+        // - `date` is an approximative date of publication.
+        // - `content_file` is the file in which we search for
+        //    the content of the article. This is an html file that will be
+        //    imbbeded in the generated page.
     {
         $this->title=$t;
         $this->lang=$l;
         $this->date=null;
+        $this->content_file=null;
     }
 
     function set_date($d) { $this->date=$d; }
+    function set_content_file($f) { $this->content_file=$f; }
     function get_date() { return $this->date;  }
     function get_lang() { return $this->lang;  }
     function get_title() { return $this->title; }
@@ -124,9 +131,16 @@ class article
             </ul>
         </div>';
     }
-    function get_text()
+    function get_content()
     {
-        return "<p>This is the text</p>";
+        if (file_exists($this->content_file))
+        {
+            return  file_get_contents($this->content_file);
+        }
+        else
+        {
+            return "File not found ".$this->contient_file;
+        }
     }
     function echo_body()
     // echoes the <body>...</body> part 
@@ -137,7 +151,7 @@ class article
 
         echo "<small>",$this->get_date(),"</small>";
 
-        echo $this->get_text();
+        echo $this->get_content();
 
         echo "</div>";
         echo $this->echo_sidebar();
