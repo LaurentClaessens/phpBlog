@@ -21,7 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 require("Article_Summary.php");
 
 class RSS_Flux
-    /* This class represents a RSS flux. It represents a RSS xml file of the form
+    /* This class represents a RSS flux. It represents a RSS xml file like
+     * examples/rss.xml
      *
      <?xml version="1.0" encoding="utf-8"
     <rss version="2.0"> 
@@ -55,6 +56,10 @@ class RSS_Flux
     function get_xml_filename() { return $this->xml_filename; }
     function main_channel()
     {
+        if (!function_exists("simplexml_load_file"))
+        {
+            echo "simpleXML functions not available";
+        }
         $xml=simplexml_load_file( $this->get_xml_filename()  );
         $a=$xml->channel;
         return $xml->channel;

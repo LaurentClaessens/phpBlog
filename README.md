@@ -6,6 +6,8 @@ J'ai donc décidé de «moderniser» ça comme exercice de `php` ... travail en 
 
 ## Installation
 
+### Chez moi
+
 Pour mémoire ...
 
 Pour avoir la liste des anciens articles, il faut lire le fichier `Trss.xml` (le nom va changer très bientôt). Pour ce faire j'utilise la fonction 
@@ -21,3 +23,8 @@ Ensuite redémarrer le server Apache :
 ```bash
 sudo service apache2 restart
 ```
+
+### Sur mon site
+
+Il se fait que mon hébergeur OVH a du bon php, et que je n'ai rien dû faire de spécial, à part activer php7 à partir de l'interface web de mon compte OVH.
+

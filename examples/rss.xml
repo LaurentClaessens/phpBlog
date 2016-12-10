@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"> 
+    <channel> 
+        <title>Blog de Laurent Claessens</title> 
+        <link>http://laurent.claessens-donadello.eu/feed</link> 
+        <description>Mon blog personnel, tout fait à la main en Vim.</description>
+        <item> 
+            <title>Hollande n'a juste pas eu la croissance sur laquelle il comptait</title>
+            <link>hollande_croissance.html</link>
+            <description>
+                François Hollande n'a pas eu la croissance économique sur laquelle il comptait. Et cela ne dépendait pas de lui. Je crois que tous les autres se seraient plantés de la même façon.
+            </description>
+            <guid>feed/hollande_croissance.html</guid> 
+        </item>  
+        <item> 
+            <title>Mon stack</title>
+            <link>mon_stack.html</link>
+            <description>
+                Mon stack
+            </description>
+            <guid>feed/mon_stack.html</guid> 
+        </item>  
+        <item> 
+            <title>Liens - 2</title>
+            <link>liens_2.html</link>
+            <description>
+                Quelque liens intéressants.
+            </description>
+            <guid>feed/liens_2.html</guid> 
+        </item>  
+        <item> 
+            <title>Facebook ne censure pas</title>
+            <link>facebook_ne_censure_pas.html</link>
+            <description>
+                Non, Facebook ne censure pas. C'est juste un éditeur à bas coût qui vous fournit un travail de mauvaise qualité.
+            </description>
+            <guid>facebook_ne_censure_pas.html</guid> 
+        </item>  
+        <item> 
+            <title>Climat et technologie</title>
+            <link>climat-et-technologie.html</link>
+            <description>
+                Il y a un petit paradoxe à croire en même temps au "problème" climatique et à une énorme accélération technologie pour les prochaines décenies. 
+            </description>
+            <guid>climat-et-technologie.html</guid> 
+        </item>  
+        <item> 
+            <title>Le Frido est en vente</title>
+            <link>frido_vente.html</link>
+            <description>
+                Le Frido est maintenat commercialisé, ce qui en fait un livre utilisable à l'agrégation.
+            </description>
+            <guid>feed/frido_vente.html</guid> 
+        </item>  
+        <item> 
+            <title>Liens - 1</title>
+            <link>liens_1.html</link>
+            <description>
+                Quelque liens intéressants.
+            </description>
+            <guid>feed/liens_1.html</guid> 
+        </item>  
+        <item> 
+            <title>Pourquoi l'esperanto n'est pas la bonne solution ?</title>
+            <link>esperanto.html</link>
+            <description>
+                Une réponse définitive à la question du titre, qui mettra tout le monde d'accord.
+            </description>
+            <guid>feed/esperanto.html</guid> 
+        </item>  
+        <item> 
+            <title>Présentation du Frido</title>
+            <link>frido_presentation.html</link>
+            <description>
+                Une courte présentation du Frido, un cours de mathématique destiné aux candidats à l'agrégation.
+            </description>
+            <guid>feed/frido_presentation.html</guid> 
+        </item>  
+        <item> 
+            <title>Install Ubuntu with debootstrap</title>
+            <link>debootstrap.html</link>
+            <description>
+                This is how I actually install my Ubutnu, using deboostrap.
+            </description>
+            <guid>feed/debootstrap.html</guid> 
+        </item>  
+    </channel> 
+</rss>
