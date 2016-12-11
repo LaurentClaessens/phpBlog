@@ -20,7 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Read an xml file like the one given in 'example/rss.xml', and add a new article.
 """
 
-from xml.dom.minidom import parse
+from xml.etree.ElementTree import Element,parse
+from xml.etree.ElementTree import tostring      
 import os
 
 
@@ -48,29 +49,41 @@ class ArticleSummary(object):
     def DOM_item_element(self):
         # return a DOM element describing the "<item>...</item>"
         # to be added to the xml file.
-        pass
+        item_el = Element("item")
+        title_el = Element("title")
+        title_el.text=self.title
+        link_el=Element("link")
+        link_el.text=self.html_file
+        item_el.append(title_el)
+        item_el.append(link_el)
+        return item_el
 
-class MyBlog(object):
+class Blog(object):
     """
     This class represent the whole blog.
     This is a wrapper around parsing the xml file.
+
+    - `_channel` is the element "channel" of the xml file.
+        The xml file is supposed to have one and only one "channel" element.
+        It is computed only once, and then can be modified (by adding articles
+        for examples).
     """
     def __init__(self,xml_source):
-        self.xml_source=xml_source
-
-    def channel(self):
+        self._xml_source=xml_source
+        self._channel=parse(self._xml_source).getroot()[0]
+    def add_article(self,article):
         """
-        The xml file is supposed to have one and only one "channel" element.
-        This function returns that element.
+        Add an article to the flux.
+        - `article` is type `ArticleSummary`.
         """
-        dom1 = parse(self.xml_source)
-        return dom1.getElementsByTagName("channel")[0]
+        self._channel.append(article.DOM_item_element())
     def article_list(self):
         """
         Yield the list of the articles published on the blog.
+
+        The articles are given under the form of 'ArticleSummary' objects.
         """
-        chan=self.channel()
-        for item in chan.getElementsByTagName("item"):
-            title=item.getElementsByTagName("title")[0].childNodes[0].data
-            link=item.getElementsByTagName("link")[0].childNodes[0].data
+        for item in self._channel.iter("item"):
+            title=item.find("title").text
+            link=item.find("link").text
             yield ArticleSummary(title,link)
