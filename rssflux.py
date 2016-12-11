@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Read an xml file like the one given in 'example/rss.xml', and add a new article.
 """
 
-from xml.etree.ElementTree import Element,parse
-from xml.etree.ElementTree import tostring      
+from xml.etree.ElementTree import Element,parse,ElementTree
+from xml.etree.ElementTree import tostring
 import os
 
 
@@ -37,9 +37,16 @@ class ArticleSummary(object):
     - `guide` is the relative path to the html file from where the 'rss.xml' file
        stays.
     """
-    def __init__(self,title=None,html_file=None):
-        self.title=title
-        self.html_file=html_file
+    def __init__(self):
+        self.title=None
+        self.html_file=None
+        self.description=None
+    def set_title(self,t):
+        self.title=t
+    def set_html_file(self,t):
+        self.html_file=t
+    def set_description(self,t):
+        self.description=t
     def get_title(self):
         return self.title
     def get_html_file(self):
@@ -75,8 +82,18 @@ class Blog(object):
         """
         Add an article to the flux.
         - `article` is type `ArticleSummary`.
+
+        This function is end-user function and makes several things :
+        - add the article in the xml file
+        - creates the php file
+        - rewrite the xml file
         """
-        self._channel.insert(0,article.DOM_item_element())
+        # We insert in position 3 because the channel includes
+        # - title, link, description (of the blog) before the list
+        # of articles.
+        self._channel.insert(3,article.DOM_item_element())
+        article.create_php()
+        self.write_xml()
     def article_list(self):
         """
         Yield the list of the articles published on the blog.
@@ -87,3 +104,15 @@ class Blog(object):
             title=item.find("title").text
             link=item.find("link").text
             yield ArticleSummary(title,link)
+    def write_xml(self,filename=None):
+        """
+        Rewrite the xml file. 
+
+        By default, it overwrites the original file, but you can pass the
+        `filename` parameter.
+        """
+        if filename is None :
+            filename=self._xml_source
+        new=parse(self._xml_source)
+        new.getroot()[0]=self._channel
+        new.write(filename,encoding="utf8")
