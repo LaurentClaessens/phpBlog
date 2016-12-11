@@ -76,7 +76,7 @@ class Blog(object):
         Add an article to the flux.
         - `article` is type `ArticleSummary`.
         """
-        self._channel.append(article.DOM_item_element())
+        self._channel.insert(0,article.DOM_item_element())
     def article_list(self):
         """
         Yield the list of the articles published on the blog.
