@@ -81,7 +81,7 @@ class RSS_Flux
         foreach ($items as $i)
         {
             $title=$i->title;
-            $url=$i->link;
+            $url=basename($i->link);
 
             $summary = new Article_Summary();
             $summary->set_link($url);

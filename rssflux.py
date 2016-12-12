@@ -57,7 +57,10 @@ class ArticleSummary(object):
     def get_html_file(self):
         return self.html_file
     def get_php_file(self):
-        return os.path.join(PHP_DIR,self.name+".php")
+        s = os.path.join(PHP_DIR,self.name+".php")
+        print("VÉRIFIER : devrait aller vers php/...")
+        print(s)
+        return s
     def get_html_file(self):
         return os.path.join(HTML_DIR,self.name+".html")
     def create_php(self,surrounding):

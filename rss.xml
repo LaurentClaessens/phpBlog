@@ -3,72 +3,72 @@
         <title>Blog de Laurent Claessens</title> 
         <link>http://laurent.claessens-donadello.eu/blog</link> 
         <description>Mon blog personnel, tout fait à la main en Vim.</description>
-        <item><title>Qu'est-ce que la méta programmation ?</title><link>meta.php</link></item><item>
+        <item><title>Qu'est-ce que la méta programmation ?</title><link>php/meta.php</link></item><item>
             <title>Hollande n'a juste pas eu la croissance sur laquelle il comptait</title>
-            <link>hollande_croissance.php</link>
+            <link>php/hollande_croissance.php</link>
             <description>
                 François Hollande n'a pas eu la croissance économique sur laquelle il comptait. Et cela ne dépendait pas de lui. Je crois que tous les autres se seraient plantés de la même façon.
             </description>
         </item>  
         <item> 
             <title>Mon stack</title>
-            <link>mon_stack.php</link>
+            <link>php/mon_stack.php</link>
             <description>
                 Mon stack
             </description>
         </item>  
         <item> 
             <title>Liens - 2</title>
-            <link>liens_2.php</link>
+            <link>php/liens_2.php</link>
             <description>
                 Quelque liens intéressants.
             </description>
         </item>  
         <item> 
             <title>Facebook ne censure pas</title>
-            <link>facebook_ne_censure_pas.php</link>
+            <link>php/facebook_ne_censure_pas.php</link>
             <description>
                 Non, Facebook ne censure pas. C'est juste un éditeur à bas coût qui vous fournit un travail de mauvaise qualité.
             </description>
         </item>  
         <item> 
             <title>Climat et technologie</title>
-            <link>climat-et-technologie.php</link>
+            <link>php/climat-et-technologie.php</link>
             <description>
                 Il y a un petit paradoxe à croire en même temps au "problème" climatique et à une énorme accélération technologie pour les prochaines décenies. 
             </description>
         </item>  
         <item> 
             <title>Le Frido est en vente</title>
-            <link>frido_vente.php</link>
+            <link>php/frido_vente.php</link>
             <description>
                 Le Frido est maintenat commercialisé, ce qui en fait un livre utilisable à l'agrégation.
             </description>
         </item>  
         <item> 
             <title>Liens - 1</title>
-            <link>liens_1.php</link>
+            <link>php/liens_1.php</link>
             <description>
                 Quelque liens intéressants.
             </description>
         </item>  
         <item> 
             <title>Pourquoi l'esperanto n'est pas la bonne solution ?</title>
-            <link>esperanto.php</link>
+            <link>php/esperanto.php</link>
             <description>
                 Une réponse définitive à la question du titre, qui mettra tout le monde d'accord.
             </description>
         </item>  
         <item> 
             <title>Présentation du Frido</title>
-            <link>frido_presentation.php</link>
+            <link>php/frido_presentation.php</link>
             <description>
                 Une courte présentation du Frido, un cours de mathématique destiné aux candidats à l'agrégation.
             </description>
         </item>  
         <item> 
             <title>Install Ubuntu with debootstrap</title>
-            <link>debootstrap.php</link>
+            <link>php/debootstrap.php</link>
             <description>
                 This is how I actually install my Ubutnu, using deboostrap.
             </description>
