@@ -62,6 +62,10 @@ class ArticleSummary(object):
         return os.path.join(HTML_DIR,self.name+".html")
     def create_php(self,surrounding):
         """ Creates the php file; the one that the reader will see.  """
+
+        # The substitution of HTML_FILE takes into account
+        # the fact that this php file will be read from "blog/php"
+        # and has to look for the html file in "blog/html"
         text="""<? php
                 require("SRC_DIR/Article.php");
 
@@ -73,7 +77,7 @@ class ArticleSummary(object):
                 ?>            
         """.replace("SRC_DIR",SRC_DIR)\
             .replace("DATE",self.date)\
-            .replace("HTML_FILE",self.get_html_file())\
+            .replace("HTML_FILE",os.path.join("..",self.get_html_file()))\
             .replace("SURROUNDING",surrounding)\
             .replace("TITLE",self.title)
         with open(self.get_php_file(),'w') as f:
