@@ -127,8 +127,8 @@ class Blog(object):
         # - title, link, description (of the blog) before the list
         # of articles.
         self._channel.insert(3,article.DOM_item_element())
-        article.create_php(self._xml_source)
         self.write_xml()
+        article.create_php(self._xml_source)
     def article_list(self):
         """
         Yield the list of the articles published on the blog.
