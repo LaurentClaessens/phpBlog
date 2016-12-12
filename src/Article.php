@@ -137,7 +137,10 @@ class Article
         echo ' <ul> ';
         foreach ($articles_list as $art)
         {
-            echo "<li>",$art->title,"</li>";
+            echo "<li>";
+            echo '<a href="',$art->link;
+            echo '">',$art->title,'</a> ';
+            echo   "</li>";
         }
         echo '</ul>';
         echo '</div>';
