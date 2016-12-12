@@ -131,7 +131,7 @@ class Article
         echo'
             <div class="sidebar">
             <br>
-            <a href="http://laurent.claessens-donadello.eu/rss.xml">Abonnez-vous au RSS.</a> 
+            <a href="http://laurent.claessens-donadello.eu/blog/rss.xml">Abonnez-vous au RSS.</a> 
             <br>';
         $articles_list=$this->get_surrounding_flux()->articles_list();
         echo ' <ul> ';
