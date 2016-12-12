@@ -105,7 +105,7 @@ class Article
         // If the file 'generic_head.src' does not exists, the 'str_replace' 
         // function returns a 'count===0'. So the exception throwing works.
     {
-        $generic_head = file_get_contents("generic_head.src");
+        $generic_head = file_get_contents(__DIR__."/generic_head.src");
         $count=null;
         $my_head = str_replace($this->title_hook,$this->get_title(),$generic_head,$count);
         if ($count!=1)

@@ -63,16 +63,18 @@ class ArticleSummary(object):
     def create_php(self,surrounding):
         """ Creates the php file; the one that the reader will see.  """
 
-        # The substitution of HTML_FILE takes into account
-        # the fact that this php file will be read from "blog/php"
-        # and has to look for the html file in "blog/html"
-        text="""<? php
-                require("SRC_DIR/Article.php");
+        # The substitutions take into account the fact that
+        # the php script will be executed in blog/php
+        # while some files are somewhere else :
+        # - html file in blog/html
+        # - rss.xml in blog
+        text="""<?php
+                require("../SRC_DIR/Article.php");
 
                 $art=new Article("TITLE");
                 $art->set_date("DATE");
                 $art->set_content_file("HTML_FILE");
-                $art->set_surrounding_flux("SURROUNDING");
+                $art->set_surrounding_flux("../SURROUNDING");
                 $art->echo_page();
                 ?>            
         """.replace("SRC_DIR",SRC_DIR)\
