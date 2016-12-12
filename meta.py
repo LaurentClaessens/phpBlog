@@ -5,9 +5,11 @@ import rssflux
 
 blog=rssflux.Blog("Trss.xml")
 
-meta=rssflux.ArticleSummary(title="Qu'est-ce que la méta-programmation ?",html_file="meta.html")
-meta.set_title="Qu'est-ce que la méta programmation ?"
-meta.set_html_file="meta.html"
+meta=rssflux.ArticleSummary(name="meta")
+meta.set_title("Qu'est-ce que la méta programmation ?")
+meta.set_date("Décembre 2016")
 meta.set_decription="Du code qui génère du code qui est interprété pour produire du code ..."
 
-blog.add_article(meta)
+meta.create_php("Trss.xml")
+
+#blog.add_article(meta)
