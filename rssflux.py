@@ -115,4 +115,4 @@ class Blog(object):
             filename=self._xml_source
         new=parse(self._xml_source)
         new.getroot()[0]=self._channel
-        new.write(filename,encoding="utf8")
+        new.write(filename,encoding="utf-8")
