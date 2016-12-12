@@ -1,7 +1,7 @@
 <rss version="2.0"> 
     <channel> 
         <title>Blog de Laurent Claessens</title> 
-        <link>http://laurent.claessens-donadello.eu/feed</link> 
+        <link>http://laurent.claessens-donadello.eu/blog</link> 
         <description>Mon blog personnel, tout fait à la main en Vim.</description>
         <item><title>Qu'est-ce que la méta programmation ?</title><link>meta.php</link></item><item>
             <title>Hollande n'a juste pas eu la croissance sur laquelle il comptait</title>

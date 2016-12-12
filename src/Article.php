@@ -24,7 +24,7 @@ require("RSS_Flux.php");
 
 The class 'article' represents an article in the blog. It is determined by its
 title from which one can deduce its position in the flux (analysing the file
-feed.xml) and its URL.
+rss.xml) and its URL.
 
 - $title_hook : is an hard-coded string that has to be replaced by the title
                 in the <head>...</head>.

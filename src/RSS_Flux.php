@@ -28,7 +28,7 @@ class RSS_Flux
     <rss version="2.0"> 
     <channel> 
         <title>Blog de Laurent Claessens</title> 
-        <link>http://laurent.claessens-donadello.eu/feed</link> 
+        <link>http://laurent.claessens-donadello.eu/blog</link> 
         <description>Mon blog personnel, tout fait à la main en Vim.</description>
             <item> 
                 <title>A TITLE</title> 
