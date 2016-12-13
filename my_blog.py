@@ -1,9 +1,9 @@
 #! /usr/bin/env python3
 # -*- coding: utf8 -*-
 
-import rssflux
+import Blog
 
-blog=rssflux.Blog("rss.xml")
+blog=Blog("rss.xml")
 
 
 debootstrap=rssflux.ArticleSummary(name="debootstrap")
