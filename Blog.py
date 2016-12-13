@@ -21,6 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Read an xml file like the one given in 'example/rss.xml', and add a new article.
 """
 
+from xml.etree.ElementTree import Element,parse,ElementTree
+from ArticleSummary import ArticleSummary
+
 class Blog(object):
     """
     This class represent the whole blog.
@@ -47,11 +50,11 @@ class Blog(object):
         # We insert in position 3 because the channel includes
         # - title, link, description (of the blog) before the list
         # of articles.
-        self._channel.insert(3,article.DOM_item_element())
         if article not in self:
+            self._channel.insert(3,article.DOM_item_element())
             self.write_xml()
         else :
-            print("You already have an article with toitle "+article.title)
+            print("You already have an article with title "+article.title)
         article.create_php(self._xml_source)
     def article_list(self):
         """
@@ -62,7 +65,9 @@ class Blog(object):
         for item in self._channel.iter("item"):
             title=item.find("title").text
             link=item.find("link").text
-            yield ArticleSummary(title,link)
+            art=ArticleSummary(name=None)
+            art.set_title(title)
+            yield art
     def write_xml(self,filename=None):
         """
         Rewrite the xml file. 

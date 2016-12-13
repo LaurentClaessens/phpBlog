@@ -1,10 +1,9 @@
 #! /usr/bin/env python3
 # -*- coding: utf8 -*-
 
-import Blog
+from Blog import Blog
 from ArticleSummary import ArticleSummary
 
-blog=Blog("rss.xml")
 
 
 debootstrap=ArticleSummary(name="debootstrap")
@@ -86,6 +85,9 @@ article_list.append(hollande)
 article_list.append(meta)
 article_list.append(frido_liens)
 article_list=[]
+
+blog=Blog("rss.xml")
+
 for art in article_list :
     blog.add_article(art)
 
