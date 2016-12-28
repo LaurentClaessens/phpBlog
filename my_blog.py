@@ -71,6 +71,11 @@ frido_liens.set_title("Quelque liens parlant du Frido")
 frido_liens.set_date("Décembre 2016")
 frido_liens.set_description("Je me propose de tenir ici à jour une liste des sites qui parlent du Frido")
 
+duos=ArticleSummary(name="les_duos")
+duos.set_title("Les duos qui font bien leur travail")
+duos.set_date("Décembre 2016")
+duos.set_description("Quelque duos logiciels que j'utilise et qui font du bien")
+
 article_list=[]
 article_list.append(debootstrap)
 article_list.append(frido_presentation)
@@ -84,9 +89,11 @@ article_list.append(stack)
 article_list.append(hollande)
 article_list.append(meta)
 article_list.append(frido_liens)
+article_list.append(duos)
 article_list=[]
 
 blog=Blog("rss.xml")
+blog.add_article(duos)
 
 for art in article_list :
     blog.add_article(art)
