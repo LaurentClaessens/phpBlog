@@ -1,3 +1,4 @@
+#! /usr/bin/fish
 # Clearly minimal.
 
 cp php/*.php /var/www/html/laurent/blog/php
