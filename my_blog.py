@@ -35,10 +35,10 @@ frido_vente.set_title("Le Frido est en vente")
 frido_vente.set_date("Novembre 2016")
 frido_vente.set_description("Le Frido est maintenat commercialisé, ce qui en fait un livre utilisable à l'agrégation.")
                 
-climat_tech=ArticleSummary(name="Climat_et_technoligie")
+climat_tech=ArticleSummary(name="climat_et_technologie")
 climat_tech.set_title("Climat et technologie")
 climat_tech.set_date("Novembre 2016")
-climat_tech.set_description("Il y a un petit paradoxe à croire en même temps au «problème» climatique et à une énorme accélération technologie pour les prochaines décenies. ")
+climat_tech.set_description("Il y a un petit paradoxe à croire en même temps au «problème» climatique et à une énorme accélération technologie pour les prochaines décennies. ")
                 
 
 facebook=ArticleSummary(name="facebook_ne_censure_pas")
@@ -76,6 +76,32 @@ duos.set_title("Les duos qui font bien leur travail")
 duos.set_date("Décembre 2016")
 duos.set_description("Quelque duos logiciels que j'utilise et qui font du bien")
 
+terminator=ArticleSummary(name="terminal_terminator")
+terminator.set_title("Changement de terminal : terminator")
+terminator.set_date("Janvier 2017")
+terminator.set_description("Pourquoi j'utilise Terminator au lieu de terminology")
+
+epicene=ArticleSummary(name="ecriture_epicene")
+epicene.set_title("Contre l'écriture épicène")
+epicene.set_date("Janvier 2017")
+epicene.set_description("Pourquoi le langage épicène renforce la discrimination.")
+
+frido_recherche=ArticleSummary(name="frido_recherche")
+frido_recherche.set_title("Des nouvelles du Frido")
+frido_recherche.set_date("Février 2017")
+frido_recherche.set_description("Quelque nouvelles du Frido")
+
+liens3=ArticleSummary(name="liens_3")
+liens3.set_title("Liens - 3")
+liens3.set_date("Février 2017")
+liens3.set_description("Quelque liens en vrac")
+
+intro=ArticleSummary(name="intro")
+intro.set_title("Mon blog en php")
+intro.set_date("Février 2017")
+intro.set_description("Quelque mots d'introduction")
+
+
 article_list=[]
 article_list.append(debootstrap)
 article_list.append(frido_presentation)
@@ -90,13 +116,12 @@ article_list.append(hollande)
 article_list.append(meta)
 article_list.append(frido_liens)
 article_list.append(duos)
-article_list=[]
+article_list.append(terminator)
+article_list.append(epicene)
+article_list.append(liens3)
+article_list.append(intro)
 
 blog=Blog("rss.xml")
-blog.add_article(duos)
 
 for art in article_list :
     blog.add_article(art)
-
-
-
