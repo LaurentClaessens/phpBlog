@@ -7,3 +7,6 @@ __pycache__/*
 session.vim
 *.bak
 test.html
+prochain.txt
+html/itrf.html
+php/*

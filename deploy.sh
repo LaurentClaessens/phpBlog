@@ -1,6 +1,7 @@
 #! /usr/bin/fish
 # Clearly minimal.
 
+./my_blog.py
 cp php/*.php /var/www/html/laurent/blog/php
 cp html/*.html /var/www/html/laurent/blog/html
 cp src/*.php /var/www/html/laurent/blog/src

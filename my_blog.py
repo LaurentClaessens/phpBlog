@@ -3,7 +3,7 @@
 
 from Blog import Blog
 from ArticleSummary import ArticleSummary
-
+from MdToBlogHtml import md_to_blog_html
 
 
 debootstrap=ArticleSummary(name="debootstrap")
@@ -102,7 +102,14 @@ intro.set_date("Février 2017")
 intro.set_description("Quelque mots d'introduction")
 
 
+itrf=ArticleSummary(name="itrf")
+itrf.set_title("Comment créer ses dossiers ITRF ?")
+itrf.set_date("Avril 2017")
+itrf.set_description("Créer les dossiers ITRF demande de remplir plusieurs fichiers ODT contenant essentiellement la même chose. Comment faire sans duplication de code ?")
+md_to_blog_html("html/itrf.md")
+
 article_list=[]
+article_list.append(intro)
 article_list.append(debootstrap)
 article_list.append(frido_presentation)
 article_list.append(esperanto)
@@ -119,7 +126,7 @@ article_list.append(duos)
 article_list.append(terminator)
 article_list.append(epicene)
 article_list.append(liens3)
-article_list.append(intro)
+article_list.append(itrf)
 
 blog=Blog("rss.xml")
 
