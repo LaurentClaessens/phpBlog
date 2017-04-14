@@ -10,3 +10,7 @@ test.html
 prochain.txt
 html/itrf.html
 php/*
+
+
+# html pages that are generated from .md
+html/negative.html

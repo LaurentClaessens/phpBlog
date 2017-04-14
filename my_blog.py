@@ -108,6 +108,13 @@ itrf.set_date("Avril 2017")
 itrf.set_description("Créer les dossiers ITRF demande de remplir plusieurs fichiers ODT contenant essentiellement la même chose. Comment faire sans duplication de code ?")
 md_to_blog_html("html/itrf.md")
 
+negative=ArticleSummary(name="negative")
+negative.set_title("Utiliser le plugin negative de Compiz")
+negative.set_date("Avril 2017")
+negative.set_description("J'utilise Compiz et KDE, j'ai pas honte, et j'inverse les couleurs de mon écran.")
+md_to_blog_html("html/negative.md")
+
+
 article_list=[]
 article_list.append(intro)
 article_list.append(debootstrap)
@@ -127,6 +134,7 @@ article_list.append(terminator)
 article_list.append(epicene)
 article_list.append(liens3)
 article_list.append(itrf)
+article_list.append(negative)
 
 blog=Blog("rss.xml")
 

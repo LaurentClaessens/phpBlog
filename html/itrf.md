@@ -40,16 +40,24 @@ Ceci peut être automatisé en python.
 
 ### Production des dossiers
 
-* Dans un répertoire à part, créer autant de fichiers `odt` qu'il y a de pages à remplir. Un seul fichier par «type» de page.
-* Remplir ces fichiers avec OpenOffice.
-* Remplacer les noms des concours par un tag facilement reconnaissable. Par exemple «FOOBARR-110142».
-* Ces fichiers sont des fichiers «génériques».
+* Dans un répertoire à part, créer un fichier `total.odt` qui contient toutes les pages à modifier du dossier. C'est à dire pas les deux pages de garde ni la page de présentation.
+* Remplir ce fichiers avec OpenOffice.
+* Remplacer les champs par des tags : `PYNOM`, `PYPRENOM`, `PYNUMERO` (pour le numéro du concours) et `PYCONCOURS` pour le nom du concours (ce qui arrive dans le haut de page).
+* Les pages doivent être numérotées de force de façon à ce que la chaîne `style:page-number="624"` apparaisse dans le fichier `content.xml`. Cela servira à modifier le numéro des pages. Parce que évidemment d'un dossier à l'autre, le numéro de la page où «Services publics» arrive n'est pas la même.
 
-Et là, on écrit un script en python qui, pour chaque dossier à remplir, fait une copie du fichier générique, le modifie en remplaçant «FOOBAR-110142» par le numéro du concours, et copie le résultat dans le répertoire du concours.
+Et là, on écrit un script en python qui, pour chaque dossier à remplir, fait une copie du fichier `total.odt`, le modifie en remplaçant les tags `PYmachin` par les valeurs correctes.
 
-À ce moment, il suffit de recharger le fichier maître pour que tout soit en ordre. Lui, ne se rend pas compte qu'on a modifié ses fichiers inclus derrière le dos. D'ailleurs il est fait pour cela.
+## Ce que j'ai appris
 
+* On peut changer les numéros de pages dans LibreOffice en cliquant entre deux pages.
+* On peut convertir un document `odt` en `pdf` en ligne de commande. Mais il semblerait que ce ne soit pas possible avec un document maître. Voici la commande :
+```bash
+office --convert-to pdf total.odt --headless
+```
+Attention : il faut fermer toutes les instances de LibreOffice, sinon cette commande ne fait rien.
 
 ## Conclusion
 
-J'avais déjà écrit des scripts en python pour générer du code python, html, php, c++ et latex. À partir d'aujourd'hui j'ajoute odt à la liste des types de fichiers pour lesquels j'ai écrit des morceaux en python.
+* Après des semaines de C++ intensif, ça fait du bien de taper un peu de Python. C'est un langage qui ne vous emm pas.
+* OpenOffice c'est vraiment de la m. Une force de LaTeX contre OOo, c'est que le code LaTeX est du texte brut facilement modifiable via un script en python. Le couple LaTeX-Python est vraiment fort pour la génération automatique de documents.
+* J'ai écrit dans la vie des scripts en python pour générer du code python, html, php, C++, latex et odt. 
