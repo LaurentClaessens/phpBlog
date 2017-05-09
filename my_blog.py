@@ -114,6 +114,12 @@ negative.set_date("Avril 2017")
 negative.set_description("J'utilise Compiz et KDE, j'ai pas honte, et j'inverse les couleurs de mon écran.")
 md_to_blog_html("html/negative.md")
 
+sw1=ArticleSummary(name="sw1")
+sw1.set_title("Je vous donne la seule façon dont la guerre des étoiles peut continuer")
+sw1.set_date("Mai 2017")
+sw1.set_description("Le scénario de la guerre des étoiles 10-12")
+md_to_blog_html("html/sw1.md")
+
 
 article_list=[]
 article_list.append(intro)
@@ -135,6 +141,7 @@ article_list.append(epicene)
 article_list.append(liens3)
 article_list.append(itrf)
 article_list.append(negative)
+article_list.append(sw1)
 
 blog=Blog("rss.xml")
 
