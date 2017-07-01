@@ -120,6 +120,24 @@ sw1.set_date("Mai 2017")
 sw1.set_description("Le scénario de la guerre des étoiles 10-12")
 md_to_blog_html("html/sw1.md")
 
+cadeau=ArticleSummary(name="cadeau")
+cadeau.set_title("Une idée cadeau")
+cadeau.set_date("Mai 2017")
+cadeau.set_description("Une idée de cadeau pour les grands, et peut-être pas les petits")
+md_to_blog_html("html/cadeau.md")
+
+frido_lulu=ArticleSummary(name="fridolulu")
+frido_lulu.set_title("Le Frido chez lulu.com")
+frido_lulu.set_date("Juin 2017")
+frido_lulu.set_description("Le Frido est en vente chez lulu.com et autres nouvelles du Frido")
+md_to_blog_html("html/fridolulu.md")
+
+
+journalisme=ArticleSummary(name="journalisme")
+journalisme.set_title("Du journalisme comme je le déteste")
+journalisme.set_date("Juin 2017")
+journalisme.set_description("On se contente de remettre les paroles du vendeur entre guillemets, sans (se) poser de questions")
+md_to_blog_html("html/journalisme.md")
 
 article_list=[]
 article_list.append(intro)
@@ -142,6 +160,9 @@ article_list.append(liens3)
 article_list.append(itrf)
 article_list.append(negative)
 article_list.append(sw1)
+article_list.append(cadeau)
+article_list.append(frido_lulu)
+article_list.append(journalisme)
 
 blog=Blog("rss.xml")
 
