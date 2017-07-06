@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 # Clearly minimal.
 
 ./my_blog.py
