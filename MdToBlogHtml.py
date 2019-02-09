@@ -28,7 +28,7 @@ def md_to_blog_html(md_filename):
     Here, "suitable" means without the header : only the <body> part.
     """ 
     html_filename=md_filename.replace(".md",".html")
-    os.system("pandoc -s  -o "+html_filename+" "+ md_filename)
+    os.system("pandoc --mathml -s "+md_filename+"  -o "+html_filename)
     html_base=open(html_filename,"r").read()
 
     start_tag="<body>"

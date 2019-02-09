@@ -141,3 +141,29 @@ article_list[-1].set_title("Mes commandes git préférées")
 article_list[-1].set_date("Juillet 2017")
 article_list[-1].set_description("Les commandes git que j'utilise le plus souvent et mon organisation personnelle.")
 md_to_blog_html("html/git_prefere.md")
+
+article_list.append(ArticleSummary(name="financement_univ"))
+article_list[-1].set_title("Faut-il mieux financer l'université ?")
+article_list[-1].set_date("Octobre 2017")
+article_list[-1].set_description("En ce qui me concerne, augmenter le financement des universités n'est pas ouvert à négociation.")
+md_to_blog_html("html/financement_univ.md")
+
+article_list.append(ArticleSummary(name="piste_cyclable"))
+article_list[-1].set_title("Ne pas utiliser les pistes cyclables")
+article_list[-1].set_date("Mars 2018")
+article_list[-1].set_description("tl;dr : pourquoi le volant des voitures est à gauche ?")
+md_to_blog_html("html/piste_cyclable.md")
+
+article_list.append(ArticleSummary(name="energie_electricite"))
+article_list[-1].set_title("Confusion entre énergie et électricité")
+article_list[-1].set_date("Avril 2018")
+article_list[-1].set_description("Comment l'âge de fer écrit un article entier qui ne signifie strictement rien en confondant énergie et électricité")
+md_to_blog_html("html/energie_electricite.md")
+
+article_list.append(ArticleSummary(name="gilet_jaune"))
+article_list[-1].set_title("Je suis le seul gilet jaune de Besançon")
+article_list[-1].set_date("Janvier 2019")
+article_list[-1].set_description("Un gilet jaune, ça sert aussi à être vu la nuit.")
+md_to_blog_html("html/gilet_jaune.md")
+
+# Je crois que le 'name' doit être le même que le nom du fichier md

@@ -24,6 +24,8 @@ Ensuite redémarrer le server Apache :
 sudo service apache2 restart
 ```
 
+Then my website is at `htpp://localhost`
+
 ### Sur mon site
 
 Il se fait que mon hébergeur OVH a du bon php, et que je n'ai rien dû faire de spécial, à part activer php7 à partir de l'interface web de mon compte OVH.
@@ -62,3 +64,12 @@ and the file `rss.xml` is updated.
 Now you can publish by copying the three files `rss.xml`, `name.html` and `name.php` on your website.
 
 You can see the result [here](http://laurent.claessens-donadello.eu/blog/php/frido_liens.php).
+
+## Deploy
+
+After a deploy, the result can be previewed at
+```
+http://localhost/laurent/blog/php/Ne pas utiliser les pistes cyclables.php
+```
+
+
