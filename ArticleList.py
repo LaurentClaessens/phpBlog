@@ -166,4 +166,10 @@ article_list[-1].set_date("Janvier 2019")
 article_list[-1].set_description("Un gilet jaune, ça sert aussi à être vu la nuit.")
 md_to_blog_html("html/gilet_jaune.md")
 
+article_list.append(ArticleSummary(name="frido_deploy"))
+article_list[-1].set_title("Comment je copie le frido de mon ordinateur vers OVH")
+article_list[-1].set_date("Février 2019")
+article_list[-1].set_description("Utilisation de sftp")
+md_to_blog_html("html/frido_deploy.md")
+
 # Je crois que le 'name' doit être le même que le nom du fichier md
