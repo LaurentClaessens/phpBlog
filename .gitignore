@@ -1,4 +1,5 @@
 __pycache__/*
+prochain.md
 *.swp
 *.swo
 *~
@@ -7,6 +8,7 @@ __pycache__/*
 session.vim
 *.bak
 test.html
+html/*.html
 prochain.txt
 html/itrf.html
 php/*
