@@ -5,11 +5,9 @@ Deploy the blog to OVH.
 """
 
 import os
+import subprocess
 
 REMOTE = "claessenvs@ftp.cluster003.ovh.net"
-
-commande = f"sftp -b batchfile {REMOTE}"
-
 CWD = os.getcwd()
 
 def list_dir(dirname):
@@ -42,9 +40,9 @@ def create_batchfile():
     skel ="""
 cd laurent/blog
 put rss.xml
-cd laurent/blog/html
+cd html
 __PUT_HTML__
-cd laurent/blog/php
+cd ../php
 __PUT_PHP__
     """
     put_html_list = []
@@ -63,4 +61,8 @@ __PUT_PHP__
         batchfile.write(text)
 
 
+def copy_ovh():
+    subprocess.call(['sftp', '-b' , 'batchfile', REMOTE])
+
 create_batchfile()
+copy_ovh()
