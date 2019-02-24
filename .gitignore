@@ -4,6 +4,7 @@ prochain.md
 *.swo
 *~
 .directory
+batchfile
 .kk.log
 session.vim
 *.bak
