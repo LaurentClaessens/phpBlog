@@ -1,5 +1,5 @@
 #! /bin/bash
-# Clearly minimal.
+# Clearly working well.
 
 ./my_blog.py
 cp php/*.php /var/www/html/laurent/blog/php/
