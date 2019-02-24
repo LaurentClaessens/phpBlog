@@ -37,6 +37,7 @@ class Blog(object):
     def __init__(self,xml_source):
         self._xml_source=xml_source
         self._channel=parse(self._xml_source).getroot()[0]
+        self.article_list = []
     def add_article(self, article):
         """
         Add an article to the flux.
@@ -48,27 +49,8 @@ class Blog(object):
         - creates the php file
         - rewrite the xml file
         """
-        # We insert in position 3 because the channel includes
-        # - title, link, description (of the blog) before the list
-        # of articles.
-        if article not in self:
-            self._channel.insert(3,article.DOM_item_element())
-            self.write_xml()
-        else :
-            print("You already have an article with title "+article.title)
+        self.article_list.append(article)
         article.create_php(self._xml_source)
-    def article_list(self):
-        """
-        Yield the list of the articles published on the blog.
-
-        The articles are given under the form of 'ArticleSummary' objects.
-        """
-        for item in self._channel.iter("item"):
-            title=item.find("title").text
-            link=item.find("link").text
-            art=ArticleSummary(name=None)
-            art.set_title(title)
-            yield art
     def write_xml(self,filename=None):
         """
         Rewrite the xml file. 
@@ -90,7 +72,7 @@ class Blog(object):
         </rss>
         """
         code_list = []
-        for art in self.article_list():
+        for art in self.article_list:
             code_list.append(art.xml_code())
         articles_code = "\n".join(code_list)
 
@@ -105,7 +87,8 @@ class Blog(object):
         Return 'True' if this flux already contains an article with
         the same title.
         """
-        for art in self.article_list():
+        raise DeprecationWarning
+        for art in self.article_list:
             if art.title==article.title :
                 return True
         return False

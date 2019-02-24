@@ -27,6 +27,8 @@ HTML_DIR="html"
 PHP_DIR="php"     
 SRC_DIR="src"     
 
+dprint = print
+
 class ArticleSummary(object):
     """
     This is the summary of an article, that means basically 
@@ -40,10 +42,12 @@ class ArticleSummary(object):
       structure described in README.md
     """
     def __init__(self,name):
-        self.title=None
-        self.name=name
-        self.description=None
-        self.date=None
+        if not name:
+            raise ValueError("You must provide a name for your article")
+        self.title = None
+        self.name = name
+        self.description = None
+        self.date = None
     def set_title(self,t):
         self.title=t
     def set_date(self,d):
@@ -55,7 +59,8 @@ class ArticleSummary(object):
     def get_html_file(self):
         return self.html_file
     def get_php_file(self):
-        s = os.path.join(PHP_DIR,self.name+".php")
+        dprint('self.name : ', self.name)
+        s = os.path.join(PHP_DIR, self.name + ".php")
         return s
     def get_html_file(self):
         return os.path.join(HTML_DIR,self.name+".html")
