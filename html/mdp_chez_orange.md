@@ -26,6 +26,7 @@ Il y a une seule façon de créer des mots de passe. Il faut des mots de passe l
 ### La bonne façon de faire
 
 Dans la grande majorité des cas, une bonne méthode c'est :
+
 - taper n'importe quoi au clavier, par exemple : `jsamùklmdgv,rezdfk`
 - copier dans un bête fichier texte (monsieur Michu utilisera un fichier doc).
 - copier-coller du fichier de texte vers le navigateur quand on a besoin de taper le mot de passe.

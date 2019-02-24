@@ -71,5 +71,3 @@ After a deploy, the result can be previewed at
 ```
 http://localhost/laurent/blog/php/Ne pas utiliser les pistes cyclables.php
 ```
-
-
