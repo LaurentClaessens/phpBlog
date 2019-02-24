@@ -35,8 +35,7 @@ class Blog(object):
         for examples).
     """
     def __init__(self,xml_source):
-        self._xml_source=xml_source
-        self._channel=parse(self._xml_source).getroot()[0]
+        self._xml_source = xml_source
         self.article_list = []
     def add_article(self, article):
         """
@@ -68,7 +67,7 @@ class Blog(object):
                     Mon blog personnel, tout fait à la main en Vim.
                 </description>
                 __ARTICLES__
-            </channels>
+            </channel>
         </rss>
         """
         code_list = []

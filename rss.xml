@@ -37,6 +37,6 @@
 <item><title>Je suis le seul gilet jaune de Besançon</title><link>php/gilet_jaune.php</link></item>
 <item><title>Comment je copie le frido de mon ordinateur vers OVH</title><link>php/frido_deploy.php</link></item>
 <item><title>Sécurité des mots de passe chez Orange</title><link>php/mdp_chez_orange.php</link></item>
-            </channels>
+            </channel>
         </rss>
         
