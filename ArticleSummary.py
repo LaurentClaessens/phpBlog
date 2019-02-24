@@ -29,14 +29,15 @@ SRC_DIR="src"
 
 class ArticleSummary(object):
     """
-    This is the summary of an article, that means basically what we found/write
-    in the xml file of the rss flux.
+    This is the summary of an article, that means basically 
+    what we found/write in the xml file of the rss flux.
 
     - `name` is the generic filename of the article. Not its title.
       The file names will de deduced from there. If the author writes the
       file "XXX.html", he has to pass "XXX" as name here.
-      The php file will be named "XXX.php" and the html content searched in 
-      "XXX.html". See also the subdirectory structure desribed in README.md
+      The php file will be named "XXX.php" and the html content
+      searched in "XXX.html". See also the subdirectory 
+      structure described in README.md
     """
     def __init__(self,name):
         self.title=None
@@ -82,10 +83,19 @@ class ArticleSummary(object):
             .replace("TITLE",self.title)
         with open(self.get_php_file(),'w') as f:
             f.write(text)
-
+    def xml_code(self):
+        """
+        Return a text which is the XML code to be included in
+        rss.xml.
+        """
+        text = "<item><title>__TITLE__</title><link>__LINK__</link></item>"
+        text = text.replace("__TITLE__", self.title)
+        text = text.replace("__LINK__", self.get_php_file())
+        return text
     def DOM_item_element(self):
         # return a DOM element describing the "<item>...</item>"
         # to be added to the xml file.
+        raise DeprecationWarning("Use `xml_test` instead")
         item_el = Element("item")
 
         title_el = Element("title")

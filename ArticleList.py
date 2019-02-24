@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 from ArticleSummary import ArticleSummary
 from MdToBlogHtml import md_to_blog_html
 
@@ -171,5 +169,12 @@ article_list[-1].set_title("Comment je copie le frido de mon ordinateur vers OVH
 article_list[-1].set_date("Février 2019")
 article_list[-1].set_description("Utilisation de sftp")
 md_to_blog_html("html/frido_deploy.md")
+
+article_list.append(ArticleSummary(name="mdp_chez_orange"))
+article_list[-1].set_title("Sécurité des mots de passe chez Orange")
+article_list[-1].set_date("Février 2019")
+article_list[-1].set_description("Gestionnaire de mot de passe")
+md_to_blog_html("html/mdp_chez_orange.md")
+
 
 # Je crois que le 'name' doit être le même que le nom du fichier md

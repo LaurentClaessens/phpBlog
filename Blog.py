@@ -37,10 +37,11 @@ class Blog(object):
     def __init__(self,xml_source):
         self._xml_source=xml_source
         self._channel=parse(self._xml_source).getroot()[0]
-    def add_article(self,article):
+    def add_article(self, article):
         """
         Add an article to the flux.
-        - `article` is type `ArticleSummary`.
+
+        @param {ArticleSummary} `article`
 
         This function is end-user function and makes several things :
         - add the article in the xml file
@@ -75,11 +76,30 @@ class Blog(object):
         By default, it overwrites the original file, but you can pass the
         `filename` parameter.
         """
+
+        skel = """
+        <rss version="2.0"> 
+            <channel> 
+                <title>Blog de Laurent Claessens</title> 
+                <link>http://laurent.claessens-donadello.eu/blog</link> 
+                <description>
+                    Mon blog personnel, tout fait à la main en Vim.
+                </description>
+                __ARTICLES__
+            </channels>
+        </rss>
+        """
+        code_list = []
+        for art in self.article_list():
+            code_list.append(art.xml_code())
+        articles_code = "\n".join(code_list)
+
+        xml = skel.replace("__ARTICLES__", articles_code)
+
         if filename is None :
             filename=self._xml_source
-        new=parse(self._xml_source)
-        new.getroot()[0]=self._channel
-        new.write(filename,encoding="utf-8")
+        with open(filename, 'w') as rss_xml:
+            rss_xml.write(xml)
     def __contains__(self,article):
         """
         Return 'True' if this flux already contains an article with
