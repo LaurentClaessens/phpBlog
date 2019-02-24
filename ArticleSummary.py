@@ -27,8 +27,6 @@ HTML_DIR="html"
 PHP_DIR="php"     
 SRC_DIR="src"     
 
-dprint = print
-
 class ArticleSummary(object):
     """
     This is the summary of an article, that means basically 
@@ -59,7 +57,6 @@ class ArticleSummary(object):
     def get_html_file(self):
         return self.html_file
     def get_php_file(self):
-        dprint('self.name : ', self.name)
         s = os.path.join(PHP_DIR, self.name + ".php")
         return s
     def get_html_file(self):
