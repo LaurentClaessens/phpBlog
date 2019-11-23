@@ -40,7 +40,7 @@ The directory `blog` contains the following :
 
 ## Workfow
 
-From the author point of view, non `php` is needed, but few python and html. In the file `my_blog.py` the author adds an entry by
+From the author point of view, non `php` is needed, but few python and html. In the file `ArticleList.py` the author adds an entry by
 ```python
 new_article=ArticleSummary(name="name")
 new_article.set_title("My title")
