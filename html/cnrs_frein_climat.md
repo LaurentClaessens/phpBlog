@@ -1,4 +1,4 @@
-J'ai écrit ceci en commentaire sur la vidéo (https://lejournal.cnrs.fr/videos/le-carburant-du-futur-sera-t-il-une-poudre-metallique#comment-1358)[Le carburant du futur sera-t-il une poudre métallique ?] du CNRS.
+J'ai écrit ceci en commentaire sur la vidéo [Le carburant du futur sera-t-il une poudre métallique ?](https://lejournal.cnrs.fr/videos/le-carburant-du-futur-sera-t-il-une-poudre-metallique#comment-1358) du CNRS.
 
 ## Le texte
 
