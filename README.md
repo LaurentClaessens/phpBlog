@@ -63,7 +63,7 @@ and the file `rss.xml` is updated.
 
 Now you can publish by copying the three files `rss.xml`, `name.html` and `name.php` on your website.
 
-You can see the result [here](http://laurent.claessens-donadello.eu/blog/php/frido_liens.php).
+You can see the result [here](http://localhost/laurent/blog/php/climat_et_technologie.php).
 
 ## Deploy
 

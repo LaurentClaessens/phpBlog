@@ -188,5 +188,16 @@ article_list[-1].set_date("Aout 2019")
 article_list[-1].set_description("")
 md_to_blog_html("html/pole_emploi_pire_mot_de_passe.md")
 
+article_list.append(ArticleSummary(name="pole_emploi_pire_mot_de_passe"))
+article_list[-1].set_title("Pôle emploi : le pire mot de passe")
+article_list[-1].set_date("Aout 2019")
+article_list[-1].set_description("")
+md_to_blog_html("html/pole_emploi_pire_mot_de_passe.md")
+
+article_list.append(ArticleSummary(name="je_n_irai_pas_voter"))
+article_list[-1].set_title("Je n'irai pas voter.")
+article_list[-1].set_date("Aout 2019")
+article_list[-1].set_description("")
+md_to_blog_html("html/je_n_irai_pas_voter.md")
 
 # Je crois que le 'name' doit être le même que le nom du fichier md
