@@ -19,3 +19,8 @@ Clairement, toute une partie de la population est exclue des élections : femmes
 Donc, je n'ai pas l'intention de donner une légitimité démocratique à ce qui va sortir des urnes demain, pas même si la gagnante est celle pour qui j'aurais voté.
 
 Je pense qu'il faut que le taux de participation soit aussi bas que possible. Pas parce que tous les candidats sont mauvais; mais parce que cette élection très spécifique, pour des raisons totalement indépendante de la volonté politique, ne permettent pas de désigner un gagnant qui aurait une légitimité démocratique.
+
+## Une vidéo
+
+Vous pouvez toujours regarder [cette vidéo](https://www.youtube.com/watch?v=961Ncl3k0dQ) faite par un beau paquet de youtubeurs dont un certain nombre que je suis
+
