@@ -20,7 +20,13 @@ Donc, je n'ai pas l'intention de donner une légitimité démocratique à ce qui
 
 Je pense qu'il faut que le taux de participation soit aussi bas que possible. Pas parce que tous les candidats sont mauvais; mais parce que cette élection très spécifique, pour des raisons totalement indépendante de la volonté politique, ne permettent pas de désigner un gagnant qui aurait une légitimité démocratique.
 
-## Une vidéo
+## Deux vidéo
 
-Vous pouvez toujours regarder [cette vidéo](https://www.youtube.com/watch?v=961Ncl3k0dQ) faite par un beau paquet de youtubeurs dont un certain nombre que je suis
+- [Une vidéo commune](https://www.youtube.com/watch?v=961Ncl3k0dQ) à de nombreux youtubeurs scientifiques.
+- [Une vidéo de e-penser](https://www.youtube.com/watch?v=dp1thcnPbiM) qui fait le point, explique certaines choses.
+
+    * Le coronavirus est un virus faible
+    * Pourquoi on veut étaler la propagation (et non l'arrêter)
+    * Pourquoi ne pas faire de stocks
+    - Pourquoi ne pas se faire tester
 
