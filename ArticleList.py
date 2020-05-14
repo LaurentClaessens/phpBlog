@@ -196,8 +196,14 @@ md_to_blog_html("html/pole_emploi_pire_mot_de_passe.md")
 
 article_list.append(ArticleSummary(name="je_n_irai_pas_voter"))
 article_list[-1].set_title("Je n'irai pas voter.")
-article_list[-1].set_date("Aout 2019")
+article_list[-1].set_date("Mars 2020")
 article_list[-1].set_description("")
 md_to_blog_html("html/je_n_irai_pas_voter.md")
+
+article_list.append(ArticleSummary(name="liens_4"))
+article_list[-1].set_title("Liens - 4")
+article_list[-1].set_date("Mai 2020")
+article_list[-1].set_description("Quelque liens en vrac")
+md_to_blog_html("html/liens_4.md")
 
 # Je crois que le 'name' doit être le même que le nom du fichier md
