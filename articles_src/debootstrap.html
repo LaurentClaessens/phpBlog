@@ -1,0 +1,215 @@
+<h1>How to create a bootable fully functional Ubuntu from debootstrap ?</h1>
+
+       We are here to install a full functional (and bootable) Ubuntu from deboostrap. Two remarks :
+       <ul>
+        <li>
+        First of all : <b>make your backup</b>.
+        </li>
+        <li>
+        If you are not familiar with things like <code>mkfs</code> and <code>/dev/XXX</code> you should not read this page.
+        </li>
+       </ul>
+        
+<h2>Formating the partition and installing the base system</h2>
+
+<pre><code>
+sudo mkfs.ext4 /dev/XXX
+sudo mount /dev/XXX /ubuntu
+sudo debootstrap --arch i386 xenial /ubuntu
+</code></pre>
+
+Now you have a minimal system in <code>/ubuntu</code>, but this is not bootable.
+
+<h2>source.list and fstab</h2>
+
+<pre><code>
+sudo cp /etc/apt/sources.list /ubuntu/etc/apt/sources.list
+sudo vim /ubuntu/etc/fstab
+</code></pre>
+
+Here is what you need in your new <code>fstab</code> :
+<pre><code>
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+pMqroc            /proc           proc    nodev,noexec,nosuid 0       0
+UUID=SLASH_UUID   /               ext4    errors=remount-ro 0       1
+UUID=SWAP_UUID   none            swap    sw              0       0
+</code></pre>
+where you have to replace <code>SLASH_UUID</code> by the UUID of the partition that will be the root of your new system. This is the one which is now mounted in <code>/ubuntu</code>.
+
+Use
+<pre><code>sudo blkid</code></pre> in order to know the uuid.
+
+<h2>chroot</h2>
+
+In order to be able to make the requested manipulation in your new system by chroot, you need to mount some repertories. Here you are :
+
+<pre><code>
+sudo mount --bind /dev /ubuntu/dev 
+sudo mount --bind /proc /ubuntu/proc
+sudo mount --bind /sys /ubuntu/sys
+</code></pre>
+and you can chroot to you new system : 
+<pre><code>
+chroot /ubuntu
+</code></pre>
+
+The first thing to do is an update :
+<pre><code>
+# apt update
+# apt full-upgrade
+</code></pre>
+
+<h2>Some configuration</h2>
+
+Here is the most tricky part, because there are some manipulations to be done <i>before</i> to make your new system bootable.
+
+<ul>
+    <li>Localization. You may not need this step.
+    <pre><code>
+        # apt instal language-pack-fr language-pack-li
+    </code></pre>
+    </li>
+    <li>Keyboard configuration. You may not need this step.
+    <pre><code>
+        # dpkg-reconfigure keyboard-configuration
+    </code></pre>
+    </li>
+    <li>locales
+    <pre><code>
+# locale-gen fr_FR && locale-gen fr_FR.UTF-8 && dpkg-reconfigure locales && update-locale LANG=fr_FR.UTF-8
+    </code></pre>
+    </li>
+</ul>
+
+<h2>Packages installation</h2>
+
+We first install the needed packages :
+<pre><code>
+# apt install linux-image-generic  cryptsetup libpam-mount vim grub-pc grub2-common bash-completion
+</code></pre>
+
+One remark : when you are asked where to install the boot-stuff, you only select the drive you want : <code>sda</code>, <code>sdb</code>, ... you don't select the specific partitions.
+
+You can now launch the installation of the packages you need. Here is a part of my list :
+
+
+<dl>
+    <dt>System</dt>
+    <dd> <code> unity-greeter   kubuntu-desktop linux-image-generic grub-pc grub2-common  grub-splashimages grub2-splashimages cryptsetup libpam-mount  </code>  </dd>
+    <dt>Utilities</dt>
+    <dd><code>
+bash-completion htop verbiste verbiste-gnome pdftk git git-core qgit debootstrap pavucontrol pavumeter konqueror tor torbrowser-launcher 
+    </code></dd>
+    <dt>Vim</dt>
+    <dd><code>
+        vim-latexsuite vim-gnome vim-addon-manager 
+    </code>
+    <p>
+    Notice that <code>vim-gnome</code> is requested even if you want to use plain <code>Vim</code> is the terminal because without <code>vim-gnome</code>, the options <code>--remote-tab</code> and <code>--servername</code> do not exist.
+</p>
+    </dd>
+    <dt>French use</dt>
+    <dd><code>
+ispell aspell-fr hunspell-fr wfrench ifrench  aspell-it aspell-en myspell-en-gb myspell-it hyphen-fr hyphen-it mythes-fr mythes-it thunderbird-locale-fr firefox-locale-fr language-pack-gnome-fr language-pack-fr-base language-pack-kde-fr language-pack-fr kde-l10n-fr thunderbird-locale-fr  libreoffice-help-fr
+    </code></dd>
+    <dt>Compiz</dt>
+    <dd><code>
+ compiz compizconfig-settings-manager compiz-plugins-extra marble plasma-wallpapers-addons
+    </code></dd>
+    <dt>Multimedia</dt>
+    <dd><code>
+  gstreamer1.0-plugins-bad libgstreamer-plugins-bad1.0-0 gstreamer1.0-libav gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad youtube-dl  cdrdao libdvd-pkg
+    </code></dd>
+    <dt>C++</dt>
+    <dd><code>
+  libqt5qml-graphicaleffects  libboost-all-dev  libboost1.58-all-dev 
+    </code></dd>
+    <dt>Java</dt>
+    <dd><code>
+default-jre default-jdk jgit-cli libjgit-ant-java  libjgit-java libjgit-java-doc maven pandoc 
+    </code></dd>
+    <dt>Terminology</dt>
+    <dd><code>
+terminology elementary-icon-theme  libelementary-bin
+    </code></dd>
+    <dt></dt>
+</dl>
+
+<h2>Other configurations</h2>  
+
+<p>While you are making your big <code>apt install</code> you can make some other configurations. Lines that begin with <code>#</code> are to be typed in the chroot.</p>
+
+<p>In order to have the right time zone :
+<pre><code>
+# dpkg-reconfigure tzdata
+</code></pre>
+</p>
+
+<h2>Users</h2>  
+
+<p>Create the user. Here I create my users taking care of their UID.</p>
+
+<pre><code>
+# adduser  --uid 1002 --home /interniste interniste 
+# adduser  --uid 1001 --home /home/moky moky 
+# adduser  moky sudo 
+# adduser  moky lp
+# adduser  interniste sudo
+</code></pre>
+
+Some remarks
+
+<ul>
+    <li>I do not use UID 1000. My wife has user 1000 because having an other number sometimes brings permissions problems using USB keys that are formated in ext4. </li>
+    <li>Adding my principal user to the group <code>lp</code> is mandatory to be able to install printers (I really wonder why)</li>
+    <li>It is interesting to have a "dummy" user which have super user privileges because it enables you to make a <code>fsck.ext4</code> on your home partition (well, this is not mandatory, but it makes things clearer).</li>
+</ul>
+
+<p>If you understood correctly, it was a bad idea to make a reboot before to arrive at this point.</p>
+
+<h2>Grub</h2>
+
+<p>
+In your current OS (not the chroot to the new one), install grub :
+<pre><code>
+sudo grub-install --root-directory=/ubuntu /dev/sdQUOI
+sudo cp /etc/default/grub /ubuntu/etc/default/grub
+</code></pre>
+</p>
+
+<p>Update grub; the following has to be done in the chroot :</p>
+<pre><code># update-grub</code></pre>
+
+<p>Once again in the current OS :</p>
+<pre><code>
+sudo dpkg-reconfigure grub-pc
+</code></pre>
+
+<h2>Encryption</h2>
+
+<p>
+If your home is encrypted and if the encryption's password is the same as your user'one, you can make the partition to be automatically mounted and decrypted (in the sense <code>/dev/mapper/...</code> to be created and that directory to be mounted as your home) at login. The file <code>/ubuntu/etc/security/pam_mount.conf.xml</code> has to contain the line
+</p>
+
+<pre><code>&lt volume user="moky" fstype="crypt" path="/dev/disk/by-uuid/HOME_UUID" mountpoint="/home/moky" options="fsck,relatime" /&gt </code></pre> 
+ 
+<h2>Vim</h2>
+
+I'm making this : 
+<pre><code>
+# apt install vim-gnome vim-latexsuite vim-addon-manager
+# vim-addons -w install latex-suite matchit
+</code></pre>
+
+
+<h2>DVD</h2>
+
+<pre><code>
+# sudo dpkg-reconfigure libdvd-pkg
+</code></pre>
+
+<h2>Reboot</h2>
+
+Now you can reboot your computer and play with your new system. Everything should be fine on the first strike.
+
