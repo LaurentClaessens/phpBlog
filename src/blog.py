@@ -37,7 +37,7 @@ class Blog(object):
     def __init__(self):
         self.article_list = []
         self.main_dir = Path('.').resolve()
-        self.build_dir = self.main_dir / "blog"
+        self.build_dir = self.main_dir / "build"
         self.build_html_dir = self.build_dir / "html"
         self.src_dir = self.main_dir / "articles_src"
 
