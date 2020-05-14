@@ -16,16 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+from pathlib import Path
+import os
+import subprocess
 
 from xml.etree.ElementTree import Element,parse,ElementTree
 from xml.etree.ElementTree import tostring
-import os
 
 # the subdirectory in which are the html files written by the author.
 # This is relative from the path to which belongs 'rss.xml'
-HTML_DIR="html"     
-PHP_DIR="php"     
-SRC_DIR="src"     
+MAIN_DIR = Path('.').resolve()
+SRC_DIR = MAIN_DIR / "articles_src"     
+BUILD_DIR = MAIN_DIR / "build"
+TMP_DIR = MAIN_DIR / "tmp"
 
 class ArticleSummary(object):
     """
@@ -35,9 +38,6 @@ class ArticleSummary(object):
     - `name` is the generic filename of the article. Not its title.
       The file names will de deduced from there. If the author writes the
       file "XXX.html", he has to pass "XXX" as name here.
-      The php file will be named "XXX.php" and the html content
-      searched in "XXX.html". See also the subdirectory 
-      structure described in README.md
     """
     def __init__(self,name):
         if not name:
@@ -46,25 +46,88 @@ class ArticleSummary(object):
         self.name = name
         self.description = None
         self.date = None
+
     def set_title(self,t):
         self.title=t
+
     def set_date(self,d):
         self.date=d
+
     def set_description(self,t):
         self.description=t
+
     def get_title(self):
         return self.title
-    def get_php_file(self):
-        s = os.path.join(PHP_DIR, self.name + ".php")
-        return s
-    def get_html_file(self):
-        return os.path.join(HTML_DIR,self.name+".html")
+
+    def get_dst_file(self):
+        return os.path.join(HTML_DIR, self.name+".html")
+
+    def get_source_html_file(self):
+        """
+        Return the path of the source html.
+
+        In the case the author has written in markdown, the
+        returned path does not correspond to an existing file.
+        """
+        return SRC_DIR / f'{self.name}.html'
+
+    def get_source_md_file(self):
+        """
+        Return the path of the source markdown.
+
+        In the case the author has written in html, the
+        returned path does not correspond to an existing file.
+        """
+        return SRC_DIR / f'{self.name}.md'
+
+    def dst_file(self):
+        """Return the destination build filename."""
+        return BUILD_DIR / "{self.name}.html"
+
+    def get_source_html_code(self):
+        """
+        Return the html source code of self.
+
+        This is a html with the author part (not the final one).
+        This is either the html written by the other or a generated
+        html from the markdown.
+        """
+        html_file = self.get_source_html_file()
+        if html_file.is_file():
+            return open(html_file, 'r').read()
+
+        md_filename = self.get_source_md_file()
+
+        command = f"pandoc --mathml -s {md_filename}"
+        os.system(command)
+        html_base = subprocess.check_output(['pandoc', 
+                                             '--mathml', '-s', 
+                                             md_filename])
+        start_tag = "<body>"
+        end_tag = "</body>"
+        start = html_base.find(start_tag) + len(start_tag)
+        stop = html_base.find(end_tag)
+        return html_base[start:stop]
+
+    def older_link(self):
+        """Return the html of the link to self."""
+        link = f"{self.name}.html"
+        return = f"<li> <a href={link}> {self.title}</a></li>"
+
+    def build():
+        """Create the final html file."""
+        html_source = self.get_source_html_code()
+        skel_file = MAIN_DIR / "skel_article.html"
+        text = open(skel_file, 'r').read()
+        text = text.replace('__MAIN_TITLE__', self.title)
+        text = text.replace('__DATE__', self.date)
+        text = text.replace('__AUTHOR_HTML__', html_source)
+        text = text.replace('__OLDER_LINKS__', self.blog.older_links())
+        open(self.dst_file(), 'w').write(text)
+
     def xml_code(self):
-        """
-        Return a text which is the XML code to be included in
-        rss.xml.
-        """
+        """Return the part of `rss.xml` for self."""
         text = "<item><title>__TITLE__</title><link>__LINK__</link></item>"
         text = text.replace("__TITLE__", self.title)
-        text = text.replace("__LINK__", self.get_php_file())
+        text = text.replace("__LINK__", self.get_link())
         return text

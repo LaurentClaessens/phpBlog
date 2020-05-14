@@ -25,15 +25,13 @@ from ArticleSummary import ArticleSummary
 class Blog(object):
     """
     This class represent the whole blog.
-    This is a wrapper around parsing the xml file.
 
     - `_channel` is the element "channel" of the xml file.
         The xml file is supposed to have one and only
         one "channel" element.It is computed only once, and
         then can be modified (by adding articles for examples).
     """
-    def __init__(self,xml_source):
-        self._xml_source = xml_source
+    def __init__(self):
         self.article_list = []
 
     def add_article(self, article):
@@ -41,41 +39,34 @@ class Blog(object):
         Add an article to the flux.
 
         @param {ArticleSummary} `article`
-
-        This function is end-user function and makes several things :
-        - add the article in the xml file
-        - creates the php file
-        - rewrite the xml file
         """
         self.article_list.append(article)
-        article.create_php(self._xml_source)
-    def write_xml(self,filename=None):
-        """
-        Rewrite the xml file. 
+        article.build(self._xml_source)
 
-        By default, it overwrites the original file, but you can pass the
-        `filename` parameter.
-        """
+    def build():
+        """Create the html files and rss.xml."""
+        for article in self.article_list:
+            article.build()
+        self.write_xml()
+    
+    def older_links(self):
+        """Return the html code for the list of older articles."""
+        text = "<br> <ul>"
+        for article in self.article_list[:].reverse():
+            text = text + article.older_link()
 
-        skel = 
+        text = text + "</ul>\n"
+
+    def write_xml(self):
+        """Rewrite the xml file."""
+
+        skel = open("skel_rss.xml", 'r').read()
         code_list = []
-        for art in self.article_list:
-            code_list.append(art.xml_code())
+        for article in self.article_list:
+            code_list.append(article.xml_code())
         articles_code = "\n".join(code_list)
 
         xml = skel.replace("__ARTICLES__", articles_code)
 
-        if filename is None :
-            filename=self._xml_source
-        with open(filename, 'w') as rss_xml:
+        with open('rss.xml', 'w') as rss_xml:
             rss_xml.write(xml)
-    def __contains__(self,article):
-        """
-        Return 'True' if this flux already contains an article with
-        the same title.
-        """
-        raise DeprecationWarning
-        for art in self.article_list:
-            if art.title==article.title :
-                return True
-        return False
