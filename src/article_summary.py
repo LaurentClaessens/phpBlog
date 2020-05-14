@@ -22,10 +22,6 @@ import subprocess
 
 dprint = print
 
-MAIN_DIR = Path('.').resolve()
-SRC_DIR = MAIN_DIR / "articles_src"     
-BUILD_DIR = MAIN_DIR / "build"
-TMP_DIR = MAIN_DIR / "tmp"
 
 class ArticleSummary(object):
     """
@@ -57,9 +53,6 @@ class ArticleSummary(object):
     def get_title(self):
         return self.title
 
-    def get_dst_file(self):
-        return os.path.join(HTML_DIR, self.name+".html")
-
     def get_source_html_file(self):
         """
         Return the path of the source html.
@@ -67,7 +60,7 @@ class ArticleSummary(object):
         In the case the author has written in markdown, the
         returned path does not correspond to an existing file.
         """
-        return SRC_DIR / f'{self.name}.html'
+        return self.blog.src_dir / f'{self.name}.html'
 
     def get_source_md_file(self):
         """
@@ -76,11 +69,11 @@ class ArticleSummary(object):
         In the case the author has written in html, the
         returned path does not correspond to an existing file.
         """
-        return SRC_DIR / f'{self.name}.md'
+        return self.blog.src_dir / f'{self.name}.md'
 
     def dst_file(self):
         """Return the destination build filename."""
-        return BUILD_DIR / f"{self.name}.html"
+        return self.blog.build_html_dir / f"{self.name}.html"
 
     def get_source_html_code(self):
         """
@@ -109,7 +102,7 @@ class ArticleSummary(object):
 
     def get_link(self):
         """Return the web link to this article."""
-        return f"{self.name}.html"
+        return f"html/{self.name}.html"
 
     def older_link(self):
         """Return the html of the link to self."""
@@ -119,7 +112,7 @@ class ArticleSummary(object):
     def build(self):
         """Create the final html file."""
         html_source = self.get_source_html_code()
-        skel_file = MAIN_DIR / "skel_article.html"
+        skel_file = self.blog.main_dir / "skel_article.html"
         text = open(skel_file, 'r').read()
         text = text.replace('__MAIN_TITLE__', self.title)
         text = text.replace('__DATE__', self.date)

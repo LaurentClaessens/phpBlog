@@ -37,8 +37,12 @@ class Blog(object):
     def __init__(self):
         self.article_list = []
         self.main_dir = Path('.').resolve()
-        self.build_dir = self.main_dir / "build"
+        self.build_dir = self.main_dir / "blog"
+        self.build_html_dir = self.build_dir / "html"
+        self.src_dir = self.main_dir / "articles_src"
+
         self.build_dir.mkdir(parents=True, exist_ok=True)
+        self.build_html_dir.mkdir(parents=True, exist_ok=True)
 
     def add_article(self, article):
         """
@@ -79,5 +83,5 @@ class Blog(object):
 
         xml = skel.replace("__ARTICLES__", articles_code)
 
-        with open('rss.xml', 'w') as rss_xml:
+        with open(self.build_dir / 'rss.xml', 'w') as rss_xml:
             rss_xml.write(xml)

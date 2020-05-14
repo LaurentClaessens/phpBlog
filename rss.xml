@@ -6,7 +6,42 @@
                 <description>
                     Mon blog personnel, tout fait à la main en Vim.
                 </description>
-                __ARTICLE_LIST__
+                <item><title>Install Ubuntu with debootstrap</title><link>debootstrap.html</link></item>
+<item><title>Présentation du Frido</title><link>frido_presentation.html</link></item>
+<item><title>Pourquoi l'esperanto n'est pas le bonne solution ?</title><link>esperanto.html</link></item>
+<item><title>Liens - 1</title><link>liens_1.html</link></item>
+<item><title>Le Frido est en vente</title><link>frido_vente.html</link></item>
+<item><title>Climat et technologie</title><link>climat_et_technologie.html</link></item>
+<item><title>Facebook ne censure pas</title><link>facebook_ne_censure_pas.html</link></item>
+<item><title>Liens - 2</title><link>liens_2.html</link></item>
+<item><title>Mon stack</title><link>mon_stack.html</link></item>
+<item><title>Hollande n'a juste pas eu la croissance sur laquelle il comptait</title><link>hollande_croissance.html</link></item>
+<item><title>Qu'est-ce que la méta programmation ?</title><link>meta.html</link></item>
+<item><title>Quelque liens parlant du Frido</title><link>frido_liens.html</link></item>
+<item><title>Les duos qui font bien leur travail</title><link>les_duos.html</link></item>
+<item><title>Changement de terminal : terminator</title><link>terminal_terminator.html</link></item>
+<item><title>Contre l'écriture épicène</title><link>ecriture_epicene.html</link></item>
+<item><title>Des nouvelles du Frido</title><link>frido_recherche.html</link></item>
+<item><title>Liens - 3</title><link>liens_3.html</link></item>
+<item><title>Mon blog en php</title><link>intro.html</link></item>
+<item><title>Comment créer ses dossiers ITRF ?</title><link>itrf.html</link></item>
+<item><title>Utiliser le plugin negative de Compiz</title><link>negative.html</link></item>
+<item><title>Je vous donne la seule façon dont la guerre des étoiles peut continuer</title><link>sw1.html</link></item>
+<item><title>Une idée cadeau</title><link>cadeau.html</link></item>
+<item><title>Le Frido chez lulu.com</title><link>fridolulu.html</link></item>
+<item><title>Du journalisme comme je le déteste</title><link>journalisme.html</link></item>
+<item><title>Mes commandes git préférées</title><link>git_prefere.html</link></item>
+<item><title>Faut-il mieux financer l'université ?</title><link>financement_univ.html</link></item>
+<item><title>Ne pas utiliser les pistes cyclables</title><link>piste_cyclable.html</link></item>
+<item><title>Confusion entre énergie et électricité</title><link>energie_electricite.html</link></item>
+<item><title>Je suis le seul gilet jaune de Besançon</title><link>gilet_jaune.html</link></item>
+<item><title>Comment je copie le frido de mon ordinateur vers OVH</title><link>frido_deploy.html</link></item>
+<item><title>Sécurité des mots de passe chez Orange</title><link>mdp_chez_orange.html</link></item>
+<item><title>Le CNRS est un frein à l'action climatique</title><link>cnrs_frein_climat.html</link></item>
+<item><title>Pôle emploi : le pire mot de passe</title><link>pole_emploi_pire_mot_de_passe.html</link></item>
+<item><title>Pôle emploi : le pire mot de passe</title><link>pole_emploi_pire_mot_de_passe.html</link></item>
+<item><title>Je n'irai pas voter.</title><link>je_n_irai_pas_voter.html</link></item>
+<item><title>Liens - 4</title><link>liens_4.html</link></item>
             </channel>
         </rss>
         

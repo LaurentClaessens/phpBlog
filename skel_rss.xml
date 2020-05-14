@@ -6,7 +6,7 @@
                 <description>
                     Mon blog personnel, tout fait à la main en Vim.
                 </description>
-                __ARTICLE_LIST__
+                __ARTICLES__
             </channel>
         </rss>
         

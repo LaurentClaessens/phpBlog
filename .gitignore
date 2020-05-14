@@ -1,5 +1,7 @@
 __pycache__/*
 build/*
+blog/*
+old/*
 src/__pycache__/*
 raw_rss.xml
 raw_example.html
