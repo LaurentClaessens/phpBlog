@@ -59,30 +59,6 @@ class ArticleSummary(object):
         return s
     def get_html_file(self):
         return os.path.join(HTML_DIR,self.name+".html")
-    def create_php(self,surrounding):
-        """ Creates the php file; the one that the reader will see.  """
-
-        # The substitutions take into account the fact that
-        # the php script will be executed in blog/php
-        # while some files are somewhere else :
-        # - html file in blog/html
-        # - rss.xml in blog
-        text="""<?php
-                require("../SRC_DIR/Article.php");
-
-                $art=new Article("TITLE");
-                $art->set_date("DATE");
-                $art->set_content_file("HTML_FILE");
-                $art->set_surrounding_flux("../SURROUNDING");
-                $art->echo_page();
-                ?>            
-        """.replace("SRC_DIR",SRC_DIR)\
-            .replace("DATE",self.date)\
-            .replace("HTML_FILE",os.path.join("..",self.get_html_file()))\
-            .replace("SURROUNDING",surrounding)\
-            .replace("TITLE",self.title)
-        with open(self.get_php_file(),'w') as f:
-            f.write(text)
     def xml_code(self):
         """
         Return a text which is the XML code to be included in
@@ -92,19 +68,3 @@ class ArticleSummary(object):
         text = text.replace("__TITLE__", self.title)
         text = text.replace("__LINK__", self.get_php_file())
         return text
-    def DOM_item_element(self):
-        # return a DOM element describing the "<item>...</item>"
-        # to be added to the xml file.
-        raise DeprecationWarning("Use `xml_test` instead")
-        item_el = Element("item")
-
-        title_el = Element("title")
-        title_el.text=self.title
-
-        link_el=Element("link")
-        link_el.text=self.get_php_file()
-
-        item_el.append(title_el)
-        item_el.append(link_el)
-        return item_el
-

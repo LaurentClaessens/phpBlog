@@ -17,9 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 
-"""
-Read an xml file like the one given in 'example/rss.xml', and add a new article.
-"""
+"""Describe my blog."""
 
 from xml.etree.ElementTree import Element,parse,ElementTree
 from ArticleSummary import ArticleSummary
@@ -30,13 +28,14 @@ class Blog(object):
     This is a wrapper around parsing the xml file.
 
     - `_channel` is the element "channel" of the xml file.
-        The xml file is supposed to have one and only one "channel" element.
-        It is computed only once, and then can be modified (by adding articles
-        for examples).
+        The xml file is supposed to have one and only
+        one "channel" element.It is computed only once, and
+        then can be modified (by adding articles for examples).
     """
     def __init__(self,xml_source):
         self._xml_source = xml_source
         self.article_list = []
+
     def add_article(self, article):
         """
         Add an article to the flux.
@@ -58,18 +57,7 @@ class Blog(object):
         `filename` parameter.
         """
 
-        skel = """
-        <rss version="2.0"> 
-            <channel> 
-                <title>Blog de Laurent Claessens</title> 
-                <link>http://laurent.claessens-donadello.eu/blog</link> 
-                <description>
-                    Mon blog personnel, tout fait à la main en Vim.
-                </description>
-                __ARTICLES__
-            </channel>
-        </rss>
-        """
+        skel = 
         code_list = []
         for art in self.article_list:
             code_list.append(art.xml_code())
