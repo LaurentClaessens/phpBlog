@@ -9,6 +9,7 @@ Pour deux raisons.
 Limiter les contacts non indispensables et tout ça.
 
 Il y a ici un dilemme classique entre
+
 - une grosse probabilité d'un petit problèma : 6 ans de conseil communal qui ne me plaît pas;
 - et une petite probabilité d'un gros problème : coronavirus, hospitalisation, trois enfants à la maison.
 

@@ -6,42 +6,7 @@
                 <description>
                     Mon blog personnel, tout fait à la main en Vim.
                 </description>
-                <item><title>Install Ubuntu with debootstrap</title><link>php/debootstrap.php</link></item>
-<item><title>Présentation du Frido</title><link>php/frido_presentation.php</link></item>
-<item><title>Pourquoi l'esperanto n'est pas le bonne solution ?</title><link>php/esperanto.php</link></item>
-<item><title>Liens - 1</title><link>php/liens_1.php</link></item>
-<item><title>Le Frido est en vente</title><link>php/frido_vente.php</link></item>
-<item><title>Climat et technologie</title><link>php/climat_et_technologie.php</link></item>
-<item><title>Facebook ne censure pas</title><link>php/facebook_ne_censure_pas.php</link></item>
-<item><title>Liens - 2</title><link>php/liens_2.php</link></item>
-<item><title>Mon stack</title><link>php/mon_stack.php</link></item>
-<item><title>Hollande n'a juste pas eu la croissance sur laquelle il comptait</title><link>php/hollande_croissance.php</link></item>
-<item><title>Qu'est-ce que la méta programmation ?</title><link>php/meta.php</link></item>
-<item><title>Quelque liens parlant du Frido</title><link>php/frido_liens.php</link></item>
-<item><title>Les duos qui font bien leur travail</title><link>php/les_duos.php</link></item>
-<item><title>Changement de terminal : terminator</title><link>php/terminal_terminator.php</link></item>
-<item><title>Contre l'écriture épicène</title><link>php/ecriture_epicene.php</link></item>
-<item><title>Des nouvelles du Frido</title><link>php/frido_recherche.php</link></item>
-<item><title>Liens - 3</title><link>php/liens_3.php</link></item>
-<item><title>Mon blog en php</title><link>php/intro.php</link></item>
-<item><title>Comment créer ses dossiers ITRF ?</title><link>php/itrf.php</link></item>
-<item><title>Utiliser le plugin negative de Compiz</title><link>php/negative.php</link></item>
-<item><title>Je vous donne la seule façon dont la guerre des étoiles peut continuer</title><link>php/sw1.php</link></item>
-<item><title>Une idée cadeau</title><link>php/cadeau.php</link></item>
-<item><title>Le Frido chez lulu.com</title><link>php/fridolulu.php</link></item>
-<item><title>Du journalisme comme je le déteste</title><link>php/journalisme.php</link></item>
-<item><title>Mes commandes git préférées</title><link>php/git_prefere.php</link></item>
-<item><title>Faut-il mieux financer l'université ?</title><link>php/financement_univ.php</link></item>
-<item><title>Ne pas utiliser les pistes cyclables</title><link>php/piste_cyclable.php</link></item>
-<item><title>Confusion entre énergie et électricité</title><link>php/energie_electricite.php</link></item>
-<item><title>Je suis le seul gilet jaune de Besançon</title><link>php/gilet_jaune.php</link></item>
-<item><title>Comment je copie le frido de mon ordinateur vers OVH</title><link>php/frido_deploy.php</link></item>
-<item><title>Sécurité des mots de passe chez Orange</title><link>php/mdp_chez_orange.php</link></item>
-<item><title>Le CNRS est un frein à l'action climatique</title><link>php/cnrs_frein_climat.php</link></item>
-<item><title>Pôle emploi : le pire mot de passe</title><link>php/pole_emploi_pire_mot_de_passe.php</link></item>
-<item><title>Pôle emploi : le pire mot de passe</title><link>php/pole_emploi_pire_mot_de_passe.php</link></item>
-<item><title>Je n'irai pas voter.</title><link>php/je_n_irai_pas_voter.php</link></item>
-<item><title>Liens - 4</title><link>php/liens_4.php</link></item>
+                __ARTICLE_LIST__
             </channel>
         </rss>
         

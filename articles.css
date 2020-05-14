@@ -1,0 +1,11 @@
+p { color: black; } 
+header { color: black; } 
+
+.maintext {
+	 float: left;
+	 width: 620px;
+	 margin: 10px;}
+.sidebar {
+	 float: left;
+	 width: 400px;
+	 margin: 10px;}

@@ -19,8 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 """Describe my blog."""
 
-from xml.etree.ElementTree import Element,parse,ElementTree
-from ArticleSummary import ArticleSummary
+from pathlib import Path
+import shutil
+from src.article_summary import ArticleSummary
+
+dprint = print
 
 class Blog(object):
     """
@@ -33,6 +36,9 @@ class Blog(object):
     """
     def __init__(self):
         self.article_list = []
+        self.main_dir = Path('.').resolve()
+        self.build_dir = self.main_dir / "build"
+        self.build_dir.mkdir(parents=True, exist_ok=True)
 
     def add_article(self, article):
         """
@@ -41,21 +47,26 @@ class Blog(object):
         @param {ArticleSummary} `article`
         """
         self.article_list.append(article)
-        article.build(self._xml_source)
+        article.build()
 
-    def build():
+    def build(self):
         """Create the html files and rss.xml."""
         for article in self.article_list:
             article.build()
         self.write_xml()
-    
+        src_css = self.main_dir / "articles.css"
+        shutil.copy(src_css, self.build_dir )
+
     def older_links(self):
         """Return the html code for the list of older articles."""
         text = "<br> <ul>"
-        for article in self.article_list[:].reverse():
+        list_copy = self.article_list[:]
+        list_copy.reverse()
+        for article in list_copy:
             text = text + article.older_link()
 
         text = text + "</ul>\n"
+        return text
 
     def write_xml(self):
         """Rewrite the xml file."""

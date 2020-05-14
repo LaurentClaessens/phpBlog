@@ -20,11 +20,8 @@ from pathlib import Path
 import os
 import subprocess
 
-from xml.etree.ElementTree import Element,parse,ElementTree
-from xml.etree.ElementTree import tostring
+dprint = print
 
-# the subdirectory in which are the html files written by the author.
-# This is relative from the path to which belongs 'rss.xml'
 MAIN_DIR = Path('.').resolve()
 SRC_DIR = MAIN_DIR / "articles_src"     
 BUILD_DIR = MAIN_DIR / "build"
@@ -39,11 +36,12 @@ class ArticleSummary(object):
       The file names will de deduced from there. If the author writes the
       file "XXX.html", he has to pass "XXX" as name here.
     """
-    def __init__(self,name):
+    def __init__(self, name, blog):
         if not name:
             raise ValueError("You must provide a name for your article")
-        self.title = None
         self.name = name
+        self.blog = blog
+        self.title = None
         self.description = None
         self.date = None
 
@@ -82,7 +80,7 @@ class ArticleSummary(object):
 
     def dst_file(self):
         """Return the destination build filename."""
-        return BUILD_DIR / "{self.name}.html"
+        return BUILD_DIR / f"{self.name}.html"
 
     def get_source_html_code(self):
         """
@@ -99,22 +97,26 @@ class ArticleSummary(object):
         md_filename = self.get_source_md_file()
 
         command = f"pandoc --mathml -s {md_filename}"
-        os.system(command)
-        html_base = subprocess.check_output(['pandoc', 
+        bytes_ans = subprocess.check_output(['pandoc', 
                                              '--mathml', '-s', 
                                              md_filename])
+        html_base = bytes_ans.decode("utf8")
         start_tag = "<body>"
         end_tag = "</body>"
         start = html_base.find(start_tag) + len(start_tag)
         stop = html_base.find(end_tag)
         return html_base[start:stop]
 
+    def get_link(self):
+        """Return the web link to this article."""
+        return f"{self.name}.html"
+
     def older_link(self):
         """Return the html of the link to self."""
         link = f"{self.name}.html"
-        return = f"<li> <a href={link}> {self.title}</a></li>"
+        return f"<li> <a href={self.get_link()}> {self.title}</a></li>"
 
-    def build():
+    def build(self):
         """Create the final html file."""
         html_source = self.get_source_html_code()
         skel_file = MAIN_DIR / "skel_article.html"
