@@ -1,5 +1,7 @@
 __pycache__/*
+raw_example.html
 prochain.md
+venv/*
 *.swp
 *.swo
 *~

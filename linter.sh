@@ -33,7 +33,7 @@ do_modified_work()
 }
 
 if [ $# -eq 0 ]; then
-    #do_full_work
+    do_full_work
     do_modified_work
 else
     lint_one_file $1

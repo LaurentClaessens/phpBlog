@@ -54,8 +54,6 @@ class ArticleSummary(object):
         self.description=t
     def get_title(self):
         return self.title
-    def get_html_file(self):
-        return self.html_file
     def get_php_file(self):
         s = os.path.join(PHP_DIR, self.name + ".php")
         return s
