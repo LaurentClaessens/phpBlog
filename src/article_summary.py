@@ -104,10 +104,13 @@ class ArticleSummary(object):
         """Return the web link to this article."""
         return f"html/{self.name}.html"
 
+    def get_relative_link(self):
+        """Return the link to this article from an other article."""
+        return f"{self.name}.html"
+
     def older_link(self):
         """Return the html of the link to self."""
-        link = f"{self.name}.html"
-        return f"<li> <a href={self.get_link()}> {self.title}</a></li>"
+        return f"<li> <a href={self.get_relative_link()}> {self.title}</a></li>"
 
     def build(self):
         """Create the final html file."""
