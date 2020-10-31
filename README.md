@@ -4,7 +4,7 @@ Comme vous pouvez le voir en [vous abonnant](http://laurent.claessens-donadello.
 
 ## Workfow
 
-After having filled `article_list.py` and created the markdown file in `articles_src`, run
+After having filled articles.json` and created the markdown file in `articles_src`, run
 ```
 ./my_blog.py
 ./deploy_ovh.py
