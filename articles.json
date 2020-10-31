@@ -214,5 +214,11 @@
         "description": "Quelque liens en vrac",
         "name": "liens_4",
         "title": "Liens - 4"
+    },
+    {
+        "date": "octobre 2020",
+        "description": "Donc le climat n'est pas un problème du moment.",
+        "name": "macron_citation_historique",
+        "title": "Émmanuel Macron nous fait une citation historique."
     }
 ]
