@@ -1,4 +1,9 @@
 #! /bin/bash
+
+
+# This script is deprecated. Use 'deploy_ovh' instead.
+exit 1
+
 # Clearly working well.
 
 ./my_blog.py
