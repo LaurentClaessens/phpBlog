@@ -3,7 +3,6 @@
 """Deploy the blog to OVH."""
 
 from pathlib import Path
-import os
 import subprocess
 
 REMOTE = "claessenvs@ftp.cluster003.hosting.ovh.net"
@@ -13,13 +12,7 @@ HTML_DIR = BUILD_DIR / "html"
 
 
 def create_batchfile():
-    skel ="""
-cd laurent/blog
-put build/rss.xml
-put build/articles.css
-cd html
-__PUT_HTML__
-    """
+    skel = open("batchfile.skel", 'r').read()
     put_html_list = []
     for filename in HTML_DIR.iterdir():
         put_html_list.append(f"put {filename}")
@@ -27,12 +20,16 @@ __PUT_HTML__
     put_html = "\n".join(put_html_list)
     text = skel.replace("__PUT_HTML__", put_html)
 
-    with open("batchfile", 'w') as batchfile:
+    batch_filename = "batchfile"
+    with open(batch_filename, 'w') as batchfile:
         batchfile.write(text)
+        print(f"save: {batch_filename}")
 
 
 def copy_ovh():
-    subprocess.call(['sftp', '-b' , 'batchfile', REMOTE])
+    """Send the whole to ovh."""
+    subprocess.call(['sftp', '-b', 'batchfile', REMOTE])
+
 
 create_batchfile()
 copy_ovh()

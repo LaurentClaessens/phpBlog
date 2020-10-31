@@ -1,0 +1,5 @@
+cd laurent/blog
+put build/rss.xml
+put build/articles.css
+cd html
+__PUT_HTML__
