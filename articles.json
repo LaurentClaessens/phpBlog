@@ -226,5 +226,17 @@
         "description": "Quelque liens en vrac",
         "name": "liens_5",
         "title": "Liens - 5"
+    },
+    {
+        "date": "novembre 2020",
+        "description": "Risques climatiques et nucléaires",
+        "name": "risque_climat_nucléaire",
+        "title": "Le climat est beaucoup plus dangereux que le nucléaire"
+    },
+    {
+        "date": "novembre 2020",
+        "description": "Les solutions de Greenpeace sur le nucléaire",
+        "name": "greenpeace_solutions_nucléaires",
+        "title": "Les solutions de Greenpeace pour sortir du nucléaire"
     }
 ]
