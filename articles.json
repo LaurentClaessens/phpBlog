@@ -244,5 +244,17 @@
         "description": "Nucléaire et climat : version condensée",
         "name": "nucléaire_et_climat",
         "title": "Ma position entre nucléaire et climat"
+    },
+    {
+        "date": "novembre 2020",
+        "description": "mooc climat",
+        "name": "mooc_climat_avenir_climatique",
+        "title": "climat : des vidéos assez simples"
+    },
+    {
+        "date": "décembre 2020",
+        "description": "Fred est très léger sur la question du coût éoline.",
+        "name": "fred_cout_eolien",
+        "title": "Esprit sorcier a du mal avec le coût de l'éolien"
     }
 ]
