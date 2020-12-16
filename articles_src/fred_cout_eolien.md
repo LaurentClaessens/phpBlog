@@ -54,8 +54,15 @@ Vu qu'il ne discute que du prix éolien nu, cette vidéo n'apporte aucune inform
 La tradition est que quand on prononce le mot «éolien», il faut parler de nucléaire. Le nucléaire non plus n'a pas de prix parce que lui aussi a besoin de gestion des pics. Pour le nucléaire, il faut également parler d'un scénario complet.
 
 Le scénario «nucléaire complet» en France actuellement est en très gros:
+
 - nucléaire pour la base et un peu de suivit de charge
 - hydrolique pour les pics
 - un peu de gaz pour ... heu ... pourquoi ?
 
 Le prix de ce scénario est connu : c'est le prix actuel de l'électricité en France.
+
+
+## Pour aller plus loin
+
+- [Le réveilleur](https://www.lereveilleur.com/articles/) a une longue série de vidéos sur les énergies et le climat.
+- [un mooc de avenirclimatique](https://avenirclimatique.org/mooc/) qui parle surtout de climat. Mais vu que le climat devient de plus en plus le point d'achoppement entre les écologistes les anti-nucléaires, il y a des choses qu'on ne devrait pas ignorer avant de rentrer dans le débat.

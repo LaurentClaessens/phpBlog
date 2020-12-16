@@ -25,7 +25,7 @@
     },
     {
         "date": "Novembre 2016",
-        "description": "Le Frido est maintenat commercialisé, ce qui en fait un livre utilisable à l'agrégation.",
+        "description": "Le Frido est maintenant commercialisé, ce qui en fait un livre utilisable à l'agrégation.",
         "name": "frido_vente",
         "title": "Le Frido est en vente"
     },
@@ -256,5 +256,11 @@
         "description": "Fred est très léger sur la question du coût éoline.",
         "name": "fred_cout_eolien",
         "title": "Esprit sorcier a du mal avec le coût de l'éolien"
+    },
+    {
+        "date": "décembre 2020",
+        "description": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier",
+        "name": "deux_façons",
+        "title": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier"
     }
 ]

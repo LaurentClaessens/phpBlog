@@ -18,3 +18,7 @@ Si on veut tout savoir des enjeux énergie/climat, le mieux est de se taper une 
 
 À regarder absolument si vous avez une base conséquente de connaissances scientifiques générales.
 
+
+## Si vous êtes entre les deux
+
+Vous n'avez pas spécialement une formation scientifique, mais vous aimez apprendre et vous n'avez pas peur de rester concentré une heure d'affilée ? Alors [le réveilleur](https://www.lereveilleur.com/articles/) est pour vous.
