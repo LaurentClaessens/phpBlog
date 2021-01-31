@@ -253,7 +253,7 @@
     },
     {
         "date": "décembre 2020",
-        "description": "Fred est très léger sur la question du coût éoline.",
+        "description": "Fred est très léger sur la question du coût éolien.",
         "name": "fred_cout_eolien",
         "title": "Esprit sorcier a du mal avec le coût de l'éolien"
     },
@@ -262,5 +262,17 @@
         "description": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier",
         "name": "deux_façons",
         "title": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier"
+    },
+    {
+        "date": "décembre 2020",
+        "description": "Les retombées technologiques sont une mauvaise raison",
+        "name": "pourquoi_financer_astrophysique",
+        "title": "Pourquoi finance l'astrophysique ?"
+    },
+    {
+        "date": "décembre 2020",
+        "title": "Trafalgar est vengé",
+        "description": "Ce que Napoléon et Hitler on raté, l'UE l'a fait",
+        "name": "trafalgar_est_vengé"
     }
 ]
