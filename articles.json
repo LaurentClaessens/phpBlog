@@ -274,5 +274,11 @@
         "title": "Trafalgar est vengé",
         "description": "Ce que Napoléon et Hitler on raté, l'UE l'a fait",
         "name": "trafalgar_est_vengé"
+    },
+    {
+        "date": "janvier 2021",
+        "title": "Les mauvaises raisons de ne pas accepter un confinement",
+        "description": "Le gouvernement n'apporte pas de bonnes raisons; et alors ?",
+        "name": "mauvaises_raisons_pas_confiner"
     }
 ]
