@@ -7,6 +7,7 @@ Elle y argumente surtout les retombées technologique. Je vais tenter d'explique
 ## Retombées technologiques
 
 Docteur Becky explique trois retombées de la recherche en astrophysique :
+
 - le wifi
 - les caméras numériques
 - les technique d'analyse d'image
