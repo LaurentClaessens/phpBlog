@@ -67,5 +67,5 @@ Je dit que clairement, ce sont les contraintes «il faut mettre tels et tels car
 
 ### Un peu d'ironie
 
-Pôle-Emploi passe son temps à rappeler que
+Pôle-Emploi passe son temps à rappeler qu'ils ne demandent jamais de mot de passe par mail; qu'il faut faire attention aux scams etc. Un peu comme si ils étaient préoccupés par la sécurité informatique.
 

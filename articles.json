@@ -304,5 +304,11 @@
         "title": "Une question à EELV",
         "description": "Ils n'ont pas encore répondu, mais je suis assez sûr que la réponse est oui.",
         "name": "question_eelv"
+    },
+    {
+        "date": "Mai 2021",
+        "title": "Mot de passe chez laboconnect.com",
+        "description": "laboconnect a une des pires pédagogie de mot de passe du monde",
+        "name": "pass_laboconnect"
     }
 ]
