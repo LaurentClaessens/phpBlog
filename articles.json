@@ -310,5 +310,11 @@
         "title": "Mot de passe chez laboconnect.com",
         "description": "laboconnect a une des pires pédagogie de mot de passe du monde",
         "name": "pass_laboconnect"
+    },
+    {
+        "date": "Mai 2021",
+        "title": "Covid, co2 et aération",
+        "description": "Comme c'est la mode.",
+        "name": "covid_co2_aeration"
     }
 ]
