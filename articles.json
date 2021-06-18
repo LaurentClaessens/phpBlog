@@ -322,5 +322,11 @@
         "title": "Écologie à Besançon",
         "description": "Questions et réponses sur la politique bizontine",
         "name": "ecologie_besançon"
+    },
+    {
+        "date": "Juin 2021",
+        "title": "Tourisme spatial",
+        "description": "Pourquoi les journalistes sont tellement nuls ?",
+        "name": "tourisme_spatial"
     }
 ]
