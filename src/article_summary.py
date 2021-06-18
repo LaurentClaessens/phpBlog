@@ -25,7 +25,7 @@ dprint = print
 
 class ArticleSummary(object):
     """
-    This is the summary of an article, that means basically 
+    This is the summary of an article, that means basically
     what we found/write in the xml file of the rss flux.
 
     - `name` is the generic filename of the article. Not its title.
@@ -90,9 +90,10 @@ class ArticleSummary(object):
         md_filename = self.get_source_md_file()
 
         command = f"pandoc --mathml -s {md_filename}"
-        bytes_ans = subprocess.check_output(['pandoc', 
-                                             '--mathml', '-s', 
-                                             md_filename])
+        bytes_ans = subprocess.check_output(
+            ['pandoc',
+             '--mathml', '-s',
+             md_filename])
         html_base = bytes_ans.decode("utf8")
         start_tag = "<body>"
         end_tag = "</body>"
@@ -102,7 +103,7 @@ class ArticleSummary(object):
 
     def get_link(self):
         """Return the web link to this article."""
-        return f"html/{self.name}.html"
+        return f"blog/html/{self.name}.html"
 
     def get_relative_link(self):
         """Return the link to this article from an other article."""
