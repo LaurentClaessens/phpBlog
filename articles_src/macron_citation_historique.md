@@ -1,6 +1,4 @@
 
-# Émmanuel Macron oublie le climat ?
-
 Lors de sa dernière allocution concernant la covid, notre président s'est offert une petite envolée lyrique :
 
 > Très peu de générations auront eu comme la notre autant de défis ensembles. Cette pandémie historique, les crises internationales, le terrorisme, les divisions de la société et une crise économique et sociale sans précédents liée à la première vague.

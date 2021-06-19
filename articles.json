@@ -328,5 +328,17 @@
         "title": "Tourisme spatial",
         "description": "Pourquoi les journalistes sont tellement nuls ?",
         "name": "tourisme_spatial"
+    },
+    {
+        "date": "Juin 2021",
+        "title": "Liens 7",
+        "description": "Quelque liens",
+        "name": "liens_7"
+    },
+    {
+        "date": "Juin 2021",
+        "title": "Un petit raté de mon rss.xml",
+        "description": "Ce qui arrive quand on fait tout à la main et qu'on n'est pas très bon...",
+        "name": "rate_rss_xml"
     }
 ]

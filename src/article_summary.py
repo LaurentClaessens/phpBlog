@@ -103,7 +103,7 @@ class ArticleSummary(object):
 
     def get_link(self):
         """Return the web link to this article."""
-        return f"blog/html/{self.name}.html"
+        return f"html/{self.name}.html"
 
     def get_relative_link(self):
         """Return the link to this article from an other article."""
