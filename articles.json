@@ -340,5 +340,17 @@
         "title": "Un petit raté de mon rss.xml",
         "description": "Ce qui arrive quand on fait tout à la main et qu'on n'est pas très bon...",
         "name": "rate_rss_xml"
+    },
+    {
+        "date": "Aout 2021",
+        "title": "Les dérivées qui éclipsent l'original",
+        "description": "Quelque produits qui semblent n'exister que pour introduire les dérivés non officiels",
+        "name": "derive_officiel"
+    },
+    {
+        "date": "Septembre 2021",
+        "title": "Quand la majorité des hospitalisés seront vaccinés",
+        "description": "L'argument 80% des hospitalisés sont non vaccinés est pourri",
+        "name": "vaccin_hospitalisation"
     }
 ]
