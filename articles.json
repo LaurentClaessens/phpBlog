@@ -352,5 +352,11 @@
         "title": "Quand la majorité des hospitalisés seront vaccinés",
         "description": "L'argument 80% des hospitalisés sont non vaccinés est pourri",
         "name": "vaccin_hospitalisation"
+    },
+    {
+        "date": "Septembre 2021",
+        "title": "Quel cahier de charge climatique pour le réseau électrique ?",
+        "description": "Question pour les candidats eelv",
+        "name": "cahier_charge_électricité"
     }
 ]
