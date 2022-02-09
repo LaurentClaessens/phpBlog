@@ -358,5 +358,25 @@
         "title": "Quel cahier de charge climatique pour le réseau électrique ?",
         "description": "Question pour les candidats eelv",
         "name": "cahier_charge_électricité"
+    },
+    {
+        "date": "Septembre 2021",
+        "title": "Si les vaccins sont efficaces quel tort causent les non-vaccinés ?",
+        "description": "Une bonne question",
+        "name": "tort_causent_non_vaccinés"
+    },
+    {
+        "date": "Février 2022",
+        "title": "Objectifs du Frido 1",
+        "description": "Quels sont les objectifs du Frido ?",
+        "name": "objectifs_frido_1",
+        "published": false
+    },
+    {
+        "date": "Février 2022",
+        "title": "Objectifs du Frido 2",
+        "description": "Le Frido et les habitudes en France",
+        "name": "objectifs_frido_2",
+        "published": false
     }
 ]
