@@ -376,5 +376,23 @@
         "title": "Objectifs du Frido 2",
         "description": "Le Frido et les habitudes en France",
         "name": "objectifs_frido_2"
+    },
+    {
+        "date": "Mars 2022",
+        "title": "Un second pull pour l'Ukraine",
+        "description": "Quelque y'a qu'à faut qu'on à propos de l'Ukraine",
+        "name": "second_pull_pour_Ukraine"
+    },
+    {
+        "date": "Avril 2022",
+        "title": "Les bonnes excuses",
+        "description": "Oui, mais tu comprends, je n'ai pas le choix",
+        "name": "bonnes_excuses"
+    },
+    {
+        "date": "Avril 2022",
+        "title": "Pire mot de passe : caisse d'épargne",
+        "description": "La caisse d'épargne bat le record de pôle emploi",
+        "name": "passe_caisse_épargne"
     }
 ]
