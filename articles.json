@@ -394,5 +394,25 @@
         "title": "Pire mot de passe : caisse d'épargne",
         "description": "La caisse d'épargne bat le record de pôle emploi",
         "name": "passe_caisse_épargne"
+    },
+    {
+        "date": "Avril 2022",
+        "title": "Modes de scrutin",
+        "description": "Différent modes de scrutins",
+        "name": "modes_scrutin"
+    },
+    {
+        "date": "Avril 2022",
+        "title": "Écriture inclusive : la difficulté de s'y tenir",
+        "description": "Deux exemples intéressants par Anne Hildago",
+        "name": "hildago_inclusive",
+        "published": false
+    },
+    {
+        "date": "Avril 2022",
+        "title": "Second tour",
+        "description": "Voter sans états d'âme à un second tour",
+        "name": "second_tour",
+        "published": true
     }
 ]
