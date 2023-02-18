@@ -442,5 +442,12 @@
         "description": "Pas d'avis sur cette réforme, mais sur la mienne.",
         "name": "protéger_ma_pension",
         "published": true
+    },
+    {
+        "date": "Février 2023",
+        "title": "néoVim",
+        "description": "Installation de neovim pour Ubuntu",
+        "name": "neovim",
+        "published": true
     }
 ]
