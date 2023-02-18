@@ -414,5 +414,33 @@
         "description": "Voter sans états d'âme à un second tour",
         "name": "second_tour",
         "published": true
+    },
+    {
+        "date": "Juin 2022",
+        "title": "À quel point les AI sont-elles dangereuses ?",
+        "description": "La question urgente n'est pas de savoir si elles sont conscientes",
+        "name": "ai_dangereuse",
+        "published": true
+    },
+    {
+        "date": "Septembre 2022",
+        "title": "Fin de l'abondance, tout ça ...",
+        "description": "On ne m'a pas spécialement demandé mon avis, mais le voici quand même",
+        "name": "fin_abondance",
+        "published": true
+    },
+    {
+        "date": "Décembre 2022",
+        "title": "Les arbres ne nous sauveront pas",
+        "description": "Une vidéo de Minute Heart expliquant pourquoi planter des arbres pour stocker du carbone est plus compliqué que ce que l'on croit.",
+        "name": "Trees_Won_t_Save_Us",
+        "published": true
+    },
+    {
+        "date": "Janvier 2023",
+        "title": "Protéger ma pension",
+        "description": "Pas d'avis sur cette réforme, mais sur la mienne.",
+        "name": "protéger_ma_pension",
+        "published": true
     }
 ]
