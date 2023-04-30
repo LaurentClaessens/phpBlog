@@ -68,3 +68,36 @@ Pour instaler tout ce qui manque, il suffit de lancer (à l'intérieur de nvim) 
 ```
 
 Quittez neovim et relancez. On est bon.
+
+## coc-pyright
+
+```
+sudo apt install yarn yarnpkg
+bash
+nvm use 16
+nvim test.py
+```
+
+Puis dans nvim:
+```
+:CocInstall coc-pyright
+```
+Si ça ne marche pas: 
+
+
+```
+cd ~/.local/share/nvim/plugged/coc.nvim
+bash
+nvm use 16
+npm install coc.nvim
+```
+
+## Orthographe
+
+Ouvre un autre néovim avec
+
+```
+nvim -u none
+:set spelllang=fr
+:spell
+```
