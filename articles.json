@@ -1,453 +1,460 @@
 [
-    {
-        "date": "Octobre 2016",
-        "description": "This is how I actually install my Ubutnu, using deboostrap.",
-        "name": "debootstrap",
-        "title": "Install Ubuntu with debootstrap"
-    },
-    {
-        "date": "Octobre 2016",
-        "description": "Une courte présentation du Frido, un cours de mathématique destiné aux candidats à l'agrégation",
-        "name": "frido_presentation",
-        "title": "Présentation du Frido"
-    },
-    {
-        "date": "Octobre 2016",
-        "description": "Une réponse définitive à la question du titre, qui mettre tout le monde d'accord.",
-        "name": "esperanto",
-        "title": "Pourquoi l'esperanto n'est pas le bonne solution ?"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Quelque liens intéressants",
-        "name": "liens_1",
-        "title": "Liens - 1"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Le Frido est maintenant commercialisé, ce qui en fait un livre utilisable à l'agrégation.",
-        "name": "frido_vente",
-        "title": "Le Frido est en vente"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Il y a un petit paradoxe à croire en même temps au «problème» climatique et à une énorme accélération technologie pour les prochaines décennies. ",
-        "name": "climat_et_technologie",
-        "title": "Climat et technologie"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Non, Facebook ne censure pas. C'est juste un éditeur à bas coût qui vous fournit un travail de mauvaise qualité.",
-        "name": "facebook_ne_censure_pas",
-        "title": "Facebook ne censure pas"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Quelque liens intéressants",
-        "name": "liens_2",
-        "title": "Liens - 2"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "Mon stack",
-        "name": "mon_stack",
-        "title": "Mon stack"
-    },
-    {
-        "date": "Novembre 2016",
-        "description": "François Hollande n'a pas eu la croissance économique sur laquelle il comptait. Et cela ne dépendait pas de lui. Je crois que tous les autres se seraient plantés de la même façon.",
-        "name": "hollande_croissance",
-        "title": "Hollande n'a juste pas eu la croissance sur laquelle il comptait"
-    },
-    {
-        "date": "Décembre 2016",
-        "description": null,
-        "name": "meta",
-        "title": "Qu'est-ce que la méta programmation ?"
-    },
-    {
-        "date": "Décembre 2016",
-        "description": "Je me propose de tenir ici à jour une liste des sites qui parlent du Frido",
-        "name": "frido_liens",
-        "title": "Quelque liens parlant du Frido"
-    },
-    {
-        "date": "Décembre 2016",
-        "description": "Quelque duos logiciels que j'utilise et qui font du bien",
-        "name": "les_duos",
-        "title": "Les duos qui font bien leur travail"
-    },
-    {
-        "date": "Janvier 2017",
-        "description": "Pourquoi j'utilise Terminator au lieu de terminology",
-        "name": "terminal_terminator",
-        "title": "Changement de terminal : terminator"
-    },
-    {
-        "date": "Janvier 2017",
-        "description": "Pourquoi le langage épicène renforce la discrimination.",
-        "name": "ecriture_epicene",
-        "title": "Contre l'écriture épicène"
-    },
-    {
-        "date": "Février 2017",
-        "description": "Quelque nouvelles du Frido",
-        "name": "frido_recherche",
-        "title": "Des nouvelles du Frido"
-    },
-    {
-        "date": "Février 2017",
-        "description": "Quelque liens en vrac",
-        "name": "liens_3",
-        "title": "Liens - 3"
-    },
-    {
-        "date": "Février 2017",
-        "description": "Quelque mots d'introduction",
-        "name": "intro",
-        "title": "Mon blog en php"
-    },
-    {
-        "date": "Avril 2017",
-        "description": "Créer les dossiers ITRF demande de remplir plusieurs fichiers ODT contenant essentiellement la même chose. Comment faire sans duplication de code ?",
-        "name": "itrf",
-        "title": "Comment créer ses dossiers ITRF ?"
-    },
-    {
-        "date": "Avril 2017",
-        "description": "J'utilise Compiz et KDE, j'ai pas honte, et j'inverse les couleurs de mon écran.",
-        "name": "negative",
-        "title": "Utiliser le plugin negative de Compiz"
-    },
-    {
-        "date": "Mai 2017",
-        "description": "Le scénario de la guerre des étoiles 10-12",
-        "name": "sw1",
-        "title": "Je vous donne la seule façon dont la guerre des étoiles peut continuer"
-    },
-    {
-        "date": "Mai 2017",
-        "description": "Une idée de cadeau pour les grands, et peut-être pas les petits",
-        "name": "cadeau",
-        "title": "Une idée cadeau"
-    },
-    {
-        "date": "Juin 2017",
-        "description": "Le Frido est en vente chez lulu.com et autres nouvelles du Frido",
-        "name": "fridolulu",
-        "title": "Le Frido chez lulu.com"
-    },
-    {
-        "date": "Juin 2017",
-        "description": "On se contente de remettre les paroles du vendeur entre guillemets, sans (se) poser de questions",
-        "name": "journalisme",
-        "title": "Du journalisme comme je le déteste"
-    },
-    {
-        "date": "Juillet 2017",
-        "description": "Les commandes git que j'utilise le plus souvent et mon organisation personnelle.",
-        "name": "git_prefere",
-        "title": "Mes commandes git préférées"
-    },
-    {
-        "date": "Octobre 2017",
-        "description": "En ce qui me concerne, augmenter le financement des universités n'est pas ouvert à négociation.",
-        "name": "financement_univ",
-        "title": "Faut-il mieux financer l'université ?"
-    },
-    {
-        "date": "Mars 2018",
-        "description": "tl;dr : pourquoi le volant des voitures est à gauche ?",
-        "name": "piste_cyclable",
-        "title": "Ne pas utiliser les pistes cyclables"
-    },
-    {
-        "date": "Avril 2018",
-        "description": "Comment l'âge de fer écrit un article entier qui ne signifie strictement rien en confondant énergie et électricité",
-        "name": "energie_electricite",
-        "title": "Confusion entre énergie et électricité"
-    },
-    {
-        "date": "Janvier 2019",
-        "description": "Un gilet jaune, ça sert aussi à être vu la nuit.",
-        "name": "gilet_jaune",
-        "title": "Je suis le seul gilet jaune de Besançon"
-    },
-    {
-        "date": "Février 2019",
-        "description": "Utilisation de sftp",
-        "name": "frido_deploy",
-        "title": "Comment je copie le frido de mon ordinateur vers OVH"
-    },
-    {
-        "date": "Février 2019",
-        "description": "Gestionnaire de mot de passe",
-        "name": "mdp_chez_orange",
-        "title": "Sécurité des mots de passe chez Orange"
-    },
-    {
-        "date": "Juillet 2019",
-        "description": "",
-        "name": "cnrs_frein_climat",
-        "title": "Le CNRS est un frein à l'action climatique"
-    },
-    {
-        "date": "Aout 2019",
-        "description": "",
-        "name": "pole_emploi_pire_mot_de_passe",
-        "title": "Pôle emploi : le pire mot de passe"
-    },
-    {
-        "date": "Aout 2019",
-        "description": "",
-        "name": "pole_emploi_pire_mot_de_passe",
-        "title": "Pôle emploi : le pire mot de passe"
-    },
-    {
-        "date": "Mars 2020",
-        "description": "",
-        "name": "je_n_irai_pas_voter",
-        "title": "Je n'irai pas voter."
-    },
-    {
-        "date": "Mai 2020",
-        "description": "Quelque liens en vrac",
-        "name": "liens_4",
-        "title": "Liens - 4"
-    },
-    {
-        "date": "octobre 2020",
-        "description": "Donc le climat n'est pas un problème du moment.",
-        "name": "macron_citation_historique",
-        "title": "Émmanuel Macron nous fait une citation historique."
-    },
-    {
-        "date": "octobre 2020",
-        "description": "Quelque liens en vrac",
-        "name": "liens_5",
-        "title": "Liens - 5"
-    },
-    {
-        "date": "novembre 2020",
-        "description": "Risques climatiques et nucléaires",
-        "name": "risque_climat_nucléaire",
-        "title": "Le climat est beaucoup plus dangereux que le nucléaire"
-    },
-    {
-        "date": "novembre 2020",
-        "description": "Les solutions de Greenpeace sur le nucléaire",
-        "name": "greenpeace_solutions_nucléaires",
-        "title": "Les solutions de Greenpeace pour sortir du nucléaire"
-    },
-    {
-        "date": "novembre 2020",
-        "description": "Nucléaire et climat : version condensée",
-        "name": "nucléaire_et_climat",
-        "title": "Ma position entre nucléaire et climat"
-    },
-    {
-        "date": "novembre 2020",
-        "description": "mooc climat",
-        "name": "mooc_climat_avenir_climatique",
-        "title": "climat : des vidéos assez simples"
-    },
-    {
-        "date": "décembre 2020",
-        "description": "Fred est très léger sur la question du coût éolien.",
-        "name": "fred_cout_eolien",
-        "title": "Esprit sorcier a du mal avec le coût de l'éolien"
-    },
-    {
-        "date": "décembre 2020",
-        "description": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier",
-        "name": "deux_façons",
-        "title": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier"
-    },
-    {
-        "date": "décembre 2020",
-        "description": "Les retombées technologiques sont une mauvaise raison",
-        "name": "pourquoi_financer_astrophysique",
-        "title": "Pourquoi finance l'astrophysique ?"
-    },
-    {
-        "date": "décembre 2020",
-        "title": "Trafalgar est vengé",
-        "description": "Ce que Napoléon et Hitler on raté, l'UE l'a fait",
-        "name": "trafalgar_est_vengé"
-    },
-    {
-        "date": "janvier 2021",
-        "title": "Les mauvaises raisons de ne pas accepter un confinement",
-        "description": "Le gouvernement n'apporte pas de bonnes raisons; et alors ?",
-        "name": "mauvaises_raisons_pas_confiner"
-    },
-    {
-        "date": "Avril 2021",
-        "title": "La France insoumise à propos jugement majoritaire",
-        "description": "La France insoumise répond à une question que je leur avait posée.",
-        "name": "france_insoumise_jugement_majoritaire"
-    },
-    {
-        "date": "Avril 2021",
-        "title": "Liens - 6",
-        "description": "Quelque liens en vrac",
-        "name": "liens_6"
-    },
-    {
-        "date": "Avril 2021",
-        "title": "La station spatiale internationale ne sert à rien",
-        "description": "Confirmation (en creu) par l'ESA",
-        "name": "ISS_esa_rien"
-    },
-    {
-        "date": "Mai 2021",
-        "title": "Une question à EELV",
-        "description": "Ils n'ont pas encore répondu, mais je suis assez sûr que la réponse est oui.",
-        "name": "question_eelv"
-    },
-    {
-        "date": "Mai 2021",
-        "title": "Mot de passe chez laboconnect.com",
-        "description": "laboconnect a une des pires pédagogie de mot de passe du monde",
-        "name": "pass_laboconnect"
-    },
-    {
-        "date": "Mai 2021",
-        "title": "Covid, co2 et aération",
-        "description": "Comme c'est la mode.",
-        "name": "covid_co2_aeration"
-    },
-    {
-        "date": "Mai 2021",
-        "title": "Écologie à Besançon",
-        "description": "Questions et réponses sur la politique bizontine",
-        "name": "ecologie_besançon"
-    },
-    {
-        "date": "Juin 2021",
-        "title": "Tourisme spatial",
-        "description": "Pourquoi les journalistes sont tellement nuls ?",
-        "name": "tourisme_spatial"
-    },
-    {
-        "date": "Juin 2021",
-        "title": "Liens 7",
-        "description": "Quelque liens",
-        "name": "liens_7"
-    },
-    {
-        "date": "Juin 2021",
-        "title": "Un petit raté de mon rss.xml",
-        "description": "Ce qui arrive quand on fait tout à la main et qu'on n'est pas très bon...",
-        "name": "rate_rss_xml"
-    },
-    {
-        "date": "Aout 2021",
-        "title": "Les dérivées qui éclipsent l'original",
-        "description": "Quelque produits qui semblent n'exister que pour introduire les dérivés non officiels",
-        "name": "derive_officiel"
-    },
-    {
-        "date": "Septembre 2021",
-        "title": "Quand la majorité des hospitalisés seront vaccinés",
-        "description": "L'argument 80% des hospitalisés sont non vaccinés est pourri",
-        "name": "vaccin_hospitalisation"
-    },
-    {
-        "date": "Septembre 2021",
-        "title": "Quel cahier de charge climatique pour le réseau électrique ?",
-        "description": "Question pour les candidats eelv",
-        "name": "cahier_charge_électricité"
-    },
-    {
-        "date": "Septembre 2021",
-        "title": "Si les vaccins sont efficaces quel tort causent les non-vaccinés ?",
-        "description": "Une bonne question",
-        "name": "tort_causent_non_vaccinés"
-    },
-    {
-        "date": "Février 2022",
-        "title": "Objectifs du Frido 1",
-        "description": "Quels sont les objectifs du Frido ?",
-        "name": "objectifs_frido_1"
-    },
-    {
-        "date": "Février 2022",
-        "title": "Objectifs du Frido 2",
-        "description": "Le Frido et les habitudes en France",
-        "name": "objectifs_frido_2"
-    },
-    {
-        "date": "Mars 2022",
-        "title": "Un second pull pour l'Ukraine",
-        "description": "Quelque y'a qu'à faut qu'on à propos de l'Ukraine",
-        "name": "second_pull_pour_Ukraine"
-    },
-    {
-        "date": "Avril 2022",
-        "title": "Les bonnes excuses",
-        "description": "Oui, mais tu comprends, je n'ai pas le choix",
-        "name": "bonnes_excuses"
-    },
-    {
-        "date": "Avril 2022",
-        "title": "Pire mot de passe : caisse d'épargne",
-        "description": "La caisse d'épargne bat le record de pôle emploi",
-        "name": "passe_caisse_épargne"
-    },
-    {
-        "date": "Avril 2022",
-        "title": "Modes de scrutin",
-        "description": "Différent modes de scrutins",
-        "name": "modes_scrutin"
-    },
-    {
-        "date": "Avril 2022",
-        "title": "Écriture inclusive : la difficulté de s'y tenir",
-        "description": "Deux exemples intéressants par Anne Hildago",
-        "name": "hildago_inclusive",
-        "published": false
-    },
-    {
-        "date": "Avril 2022",
-        "title": "Second tour",
-        "description": "Voter sans états d'âme à un second tour",
-        "name": "second_tour",
-        "published": true
-    },
-    {
-        "date": "Juin 2022",
-        "title": "À quel point les AI sont-elles dangereuses ?",
-        "description": "La question urgente n'est pas de savoir si elles sont conscientes",
-        "name": "ai_dangereuse",
-        "published": true
-    },
-    {
-        "date": "Septembre 2022",
-        "title": "Fin de l'abondance, tout ça ...",
-        "description": "On ne m'a pas spécialement demandé mon avis, mais le voici quand même",
-        "name": "fin_abondance",
-        "published": true
-    },
-    {
-        "date": "Décembre 2022",
-        "title": "Les arbres ne nous sauveront pas",
-        "description": "Une vidéo de Minute Heart expliquant pourquoi planter des arbres pour stocker du carbone est plus compliqué que ce que l'on croit.",
-        "name": "Trees_Won_t_Save_Us",
-        "published": true
-    },
-    {
-        "date": "Janvier 2023",
-        "title": "Protéger ma pension",
-        "description": "Pas d'avis sur cette réforme, mais sur la mienne.",
-        "name": "protéger_ma_pension",
-        "published": true
-    },
-    {
-        "date": "Février 2023",
-        "title": "néoVim",
-        "description": "Installation de neovim pour Ubuntu",
-        "name": "neovim",
-        "published": true
-    }
+  {
+    "date": "Octobre 2016",
+    "description": "This is how I actually install my Ubutnu, using deboostrap.",
+    "name": "debootstrap",
+    "title": "Install Ubuntu with debootstrap"
+  },
+  {
+    "date": "Octobre 2016",
+    "description": "Une courte présentation du Frido, un cours de mathématique destiné aux candidats à l'agrégation",
+    "name": "frido_presentation",
+    "title": "Présentation du Frido"
+  },
+  {
+    "date": "Octobre 2016",
+    "description": "Une réponse définitive à la question du titre, qui mettre tout le monde d'accord.",
+    "name": "esperanto",
+    "title": "Pourquoi l'esperanto n'est pas le bonne solution ?"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Quelque liens intéressants",
+    "name": "liens_1",
+    "title": "Liens - 1"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Le Frido est maintenant commercialisé, ce qui en fait un livre utilisable à l'agrégation.",
+    "name": "frido_vente",
+    "title": "Le Frido est en vente"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Il y a un petit paradoxe à croire en même temps au «problème» climatique et à une énorme accélération technologie pour les prochaines décennies. ",
+    "name": "climat_et_technologie",
+    "title": "Climat et technologie"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Non, Facebook ne censure pas. C'est juste un éditeur à bas coût qui vous fournit un travail de mauvaise qualité.",
+    "name": "facebook_ne_censure_pas",
+    "title": "Facebook ne censure pas"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Quelque liens intéressants",
+    "name": "liens_2",
+    "title": "Liens - 2"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "Mon stack",
+    "name": "mon_stack",
+    "title": "Mon stack"
+  },
+  {
+    "date": "Novembre 2016",
+    "description": "François Hollande n'a pas eu la croissance économique sur laquelle il comptait. Et cela ne dépendait pas de lui. Je crois que tous les autres se seraient plantés de la même façon.",
+    "name": "hollande_croissance",
+    "title": "Hollande n'a juste pas eu la croissance sur laquelle il comptait"
+  },
+  {
+    "date": "Décembre 2016",
+    "description": null,
+    "name": "meta",
+    "title": "Qu'est-ce que la méta programmation ?"
+  },
+  {
+    "date": "Décembre 2016",
+    "description": "Je me propose de tenir ici à jour une liste des sites qui parlent du Frido",
+    "name": "frido_liens",
+    "title": "Quelque liens parlant du Frido"
+  },
+  {
+    "date": "Décembre 2016",
+    "description": "Quelque duos logiciels que j'utilise et qui font du bien",
+    "name": "les_duos",
+    "title": "Les duos qui font bien leur travail"
+  },
+  {
+    "date": "Janvier 2017",
+    "description": "Pourquoi j'utilise Terminator au lieu de terminology",
+    "name": "terminal_terminator",
+    "title": "Changement de terminal : terminator"
+  },
+  {
+    "date": "Janvier 2017",
+    "description": "Pourquoi le langage épicène renforce la discrimination.",
+    "name": "ecriture_epicene",
+    "title": "Contre l'écriture épicène"
+  },
+  {
+    "date": "Février 2017",
+    "description": "Quelque nouvelles du Frido",
+    "name": "frido_recherche",
+    "title": "Des nouvelles du Frido"
+  },
+  {
+    "date": "Février 2017",
+    "description": "Quelque liens en vrac",
+    "name": "liens_3",
+    "title": "Liens - 3"
+  },
+  {
+    "date": "Février 2017",
+    "description": "Quelque mots d'introduction",
+    "name": "intro",
+    "title": "Mon blog en php"
+  },
+  {
+    "date": "Avril 2017",
+    "description": "Créer les dossiers ITRF demande de remplir plusieurs fichiers ODT contenant essentiellement la même chose. Comment faire sans duplication de code ?",
+    "name": "itrf",
+    "title": "Comment créer ses dossiers ITRF ?"
+  },
+  {
+    "date": "Avril 2017",
+    "description": "J'utilise Compiz et KDE, j'ai pas honte, et j'inverse les couleurs de mon écran.",
+    "name": "negative",
+    "title": "Utiliser le plugin negative de Compiz"
+  },
+  {
+    "date": "Mai 2017",
+    "description": "Le scénario de la guerre des étoiles 10-12",
+    "name": "sw1",
+    "title": "Je vous donne la seule façon dont la guerre des étoiles peut continuer"
+  },
+  {
+    "date": "Mai 2017",
+    "description": "Une idée de cadeau pour les grands, et peut-être pas les petits",
+    "name": "cadeau",
+    "title": "Une idée cadeau"
+  },
+  {
+    "date": "Juin 2017",
+    "description": "Le Frido est en vente chez lulu.com et autres nouvelles du Frido",
+    "name": "fridolulu",
+    "title": "Le Frido chez lulu.com"
+  },
+  {
+    "date": "Juin 2017",
+    "description": "On se contente de remettre les paroles du vendeur entre guillemets, sans (se) poser de questions",
+    "name": "journalisme",
+    "title": "Du journalisme comme je le déteste"
+  },
+  {
+    "date": "Juillet 2017",
+    "description": "Les commandes git que j'utilise le plus souvent et mon organisation personnelle.",
+    "name": "git_prefere",
+    "title": "Mes commandes git préférées"
+  },
+  {
+    "date": "Octobre 2017",
+    "description": "En ce qui me concerne, augmenter le financement des universités n'est pas ouvert à négociation.",
+    "name": "financement_univ",
+    "title": "Faut-il mieux financer l'université ?"
+  },
+  {
+    "date": "Mars 2018",
+    "description": "tl;dr : pourquoi le volant des voitures est à gauche ?",
+    "name": "piste_cyclable",
+    "title": "Ne pas utiliser les pistes cyclables"
+  },
+  {
+    "date": "Avril 2018",
+    "description": "Comment l'âge de fer écrit un article entier qui ne signifie strictement rien en confondant énergie et électricité",
+    "name": "energie_electricite",
+    "title": "Confusion entre énergie et électricité"
+  },
+  {
+    "date": "Janvier 2019",
+    "description": "Un gilet jaune, ça sert aussi à être vu la nuit.",
+    "name": "gilet_jaune",
+    "title": "Je suis le seul gilet jaune de Besançon"
+  },
+  {
+    "date": "Février 2019",
+    "description": "Utilisation de sftp",
+    "name": "frido_deploy",
+    "title": "Comment je copie le frido de mon ordinateur vers OVH"
+  },
+  {
+    "date": "Février 2019",
+    "description": "Gestionnaire de mot de passe",
+    "name": "mdp_chez_orange",
+    "title": "Sécurité des mots de passe chez Orange"
+  },
+  {
+    "date": "Juillet 2019",
+    "description": "",
+    "name": "cnrs_frein_climat",
+    "title": "Le CNRS est un frein à l'action climatique"
+  },
+  {
+    "date": "Aout 2019",
+    "description": "",
+    "name": "pole_emploi_pire_mot_de_passe",
+    "title": "Pôle emploi : le pire mot de passe"
+  },
+  {
+    "date": "Aout 2019",
+    "description": "",
+    "name": "pole_emploi_pire_mot_de_passe",
+    "title": "Pôle emploi : le pire mot de passe"
+  },
+  {
+    "date": "Mars 2020",
+    "description": "",
+    "name": "je_n_irai_pas_voter",
+    "title": "Je n'irai pas voter."
+  },
+  {
+    "date": "Mai 2020",
+    "description": "Quelque liens en vrac",
+    "name": "liens_4",
+    "title": "Liens - 4"
+  },
+  {
+    "date": "octobre 2020",
+    "description": "Donc le climat n'est pas un problème du moment.",
+    "name": "macron_citation_historique",
+    "title": "Émmanuel Macron nous fait une citation historique."
+  },
+  {
+    "date": "octobre 2020",
+    "description": "Quelque liens en vrac",
+    "name": "liens_5",
+    "title": "Liens - 5"
+  },
+  {
+    "date": "novembre 2020",
+    "description": "Risques climatiques et nucléaires",
+    "name": "risque_climat_nucléaire",
+    "title": "Le climat est beaucoup plus dangereux que le nucléaire"
+  },
+  {
+    "date": "novembre 2020",
+    "description": "Les solutions de Greenpeace sur le nucléaire",
+    "name": "greenpeace_solutions_nucléaires",
+    "title": "Les solutions de Greenpeace pour sortir du nucléaire"
+  },
+  {
+    "date": "novembre 2020",
+    "description": "Nucléaire et climat : version condensée",
+    "name": "nucléaire_et_climat",
+    "title": "Ma position entre nucléaire et climat"
+  },
+  {
+    "date": "novembre 2020",
+    "description": "mooc climat",
+    "name": "mooc_climat_avenir_climatique",
+    "title": "climat : des vidéos assez simples"
+  },
+  {
+    "date": "décembre 2020",
+    "description": "Fred est très léger sur la question du coût éolien.",
+    "name": "fred_cout_eolien",
+    "title": "Esprit sorcier a du mal avec le coût de l'éolien"
+  },
+  {
+    "date": "décembre 2020",
+    "description": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier",
+    "name": "deux_façons",
+    "title": "Deux façon d'apprécier la cuisine et de soutenir le personnel hospitalier"
+  },
+  {
+    "date": "décembre 2020",
+    "description": "Les retombées technologiques sont une mauvaise raison",
+    "name": "pourquoi_financer_astrophysique",
+    "title": "Pourquoi finance l'astrophysique ?"
+  },
+  {
+    "date": "décembre 2020",
+    "title": "Trafalgar est vengé",
+    "description": "Ce que Napoléon et Hitler on raté, l'UE l'a fait",
+    "name": "trafalgar_est_vengé"
+  },
+  {
+    "date": "janvier 2021",
+    "title": "Les mauvaises raisons de ne pas accepter un confinement",
+    "description": "Le gouvernement n'apporte pas de bonnes raisons; et alors ?",
+    "name": "mauvaises_raisons_pas_confiner"
+  },
+  {
+    "date": "Avril 2021",
+    "title": "La France insoumise à propos jugement majoritaire",
+    "description": "La France insoumise répond à une question que je leur avait posée.",
+    "name": "france_insoumise_jugement_majoritaire"
+  },
+  {
+    "date": "Avril 2021",
+    "title": "Liens - 6",
+    "description": "Quelque liens en vrac",
+    "name": "liens_6"
+  },
+  {
+    "date": "Avril 2021",
+    "title": "La station spatiale internationale ne sert à rien",
+    "description": "Confirmation (en creu) par l'ESA",
+    "name": "ISS_esa_rien"
+  },
+  {
+    "date": "Mai 2021",
+    "title": "Une question à EELV",
+    "description": "Ils n'ont pas encore répondu, mais je suis assez sûr que la réponse est oui.",
+    "name": "question_eelv"
+  },
+  {
+    "date": "Mai 2021",
+    "title": "Mot de passe chez laboconnect.com",
+    "description": "laboconnect a une des pires pédagogie de mot de passe du monde",
+    "name": "pass_laboconnect"
+  },
+  {
+    "date": "Mai 2021",
+    "title": "Covid, co2 et aération",
+    "description": "Comme c'est la mode.",
+    "name": "covid_co2_aeration"
+  },
+  {
+    "date": "Mai 2021",
+    "title": "Écologie à Besançon",
+    "description": "Questions et réponses sur la politique bizontine",
+    "name": "ecologie_besançon"
+  },
+  {
+    "date": "Juin 2021",
+    "title": "Tourisme spatial",
+    "description": "Pourquoi les journalistes sont tellement nuls ?",
+    "name": "tourisme_spatial"
+  },
+  {
+    "date": "Juin 2021",
+    "title": "Liens 7",
+    "description": "Quelque liens",
+    "name": "liens_7"
+  },
+  {
+    "date": "Juin 2021",
+    "title": "Un petit raté de mon rss.xml",
+    "description": "Ce qui arrive quand on fait tout à la main et qu'on n'est pas très bon...",
+    "name": "rate_rss_xml"
+  },
+  {
+    "date": "Aout 2021",
+    "title": "Les dérivées qui éclipsent l'original",
+    "description": "Quelque produits qui semblent n'exister que pour introduire les dérivés non officiels",
+    "name": "derive_officiel"
+  },
+  {
+    "date": "Septembre 2021",
+    "title": "Quand la majorité des hospitalisés seront vaccinés",
+    "description": "L'argument 80% des hospitalisés sont non vaccinés est pourri",
+    "name": "vaccin_hospitalisation"
+  },
+  {
+    "date": "Septembre 2021",
+    "title": "Quel cahier de charge climatique pour le réseau électrique ?",
+    "description": "Question pour les candidats eelv",
+    "name": "cahier_charge_électricité"
+  },
+  {
+    "date": "Septembre 2021",
+    "title": "Si les vaccins sont efficaces quel tort causent les non-vaccinés ?",
+    "description": "Une bonne question",
+    "name": "tort_causent_non_vaccinés"
+  },
+  {
+    "date": "Février 2022",
+    "title": "Objectifs du Frido 1",
+    "description": "Quels sont les objectifs du Frido ?",
+    "name": "objectifs_frido_1"
+  },
+  {
+    "date": "Février 2022",
+    "title": "Objectifs du Frido 2",
+    "description": "Le Frido et les habitudes en France",
+    "name": "objectifs_frido_2"
+  },
+  {
+    "date": "Mars 2022",
+    "title": "Un second pull pour l'Ukraine",
+    "description": "Quelque y'a qu'à faut qu'on à propos de l'Ukraine",
+    "name": "second_pull_pour_Ukraine"
+  },
+  {
+    "date": "Avril 2022",
+    "title": "Les bonnes excuses",
+    "description": "Oui, mais tu comprends, je n'ai pas le choix",
+    "name": "bonnes_excuses"
+  },
+  {
+    "date": "Avril 2022",
+    "title": "Pire mot de passe : caisse d'épargne",
+    "description": "La caisse d'épargne bat le record de pôle emploi",
+    "name": "passe_caisse_épargne"
+  },
+  {
+    "date": "Avril 2022",
+    "title": "Modes de scrutin",
+    "description": "Différent modes de scrutins",
+    "name": "modes_scrutin"
+  },
+  {
+    "date": "Avril 2022",
+    "title": "Écriture inclusive : la difficulté de s'y tenir",
+    "description": "Deux exemples intéressants par Anne Hildago",
+    "name": "hildago_inclusive",
+    "published": false
+  },
+  {
+    "date": "Avril 2022",
+    "title": "Second tour",
+    "description": "Voter sans états d'âme à un second tour",
+    "name": "second_tour",
+    "published": true
+  },
+  {
+    "date": "Juin 2022",
+    "title": "À quel point les AI sont-elles dangereuses ?",
+    "description": "La question urgente n'est pas de savoir si elles sont conscientes",
+    "name": "ai_dangereuse",
+    "published": true
+  },
+  {
+    "date": "Septembre 2022",
+    "title": "Fin de l'abondance, tout ça ...",
+    "description": "On ne m'a pas spécialement demandé mon avis, mais le voici quand même",
+    "name": "fin_abondance",
+    "published": true
+  },
+  {
+    "date": "Décembre 2022",
+    "title": "Les arbres ne nous sauveront pas",
+    "description": "Une vidéo de Minute Heart expliquant pourquoi planter des arbres pour stocker du carbone est plus compliqué que ce que l'on croit.",
+    "name": "Trees_Won_t_Save_Us",
+    "published": true
+  },
+  {
+    "date": "Janvier 2023",
+    "title": "Protéger ma pension",
+    "description": "Pas d'avis sur cette réforme, mais sur la mienne.",
+    "name": "protéger_ma_pension",
+    "published": true
+  },
+  {
+    "date": "Février 2023",
+    "title": "néoVim",
+    "description": "Installation de neovim pour Ubuntu",
+    "name": "neovim",
+    "published": true
+  },
+  {
+    "date": "Avril 2023",
+    "title": "Répertoires et imports en python",
+    "description": "comment je fait",
+    "name": "dirmanage",
+    "published": true
+  }
 ]

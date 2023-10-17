@@ -11,7 +11,7 @@
 # cd ~/.pyenv/libexec
 # ./pyenv install 3.7.4
 
-VERSION=3.7.4
+VERSION=3.10.12
 PYTHON=~/.pyenv/versions/$VERSION/bin/python3
 MAIN_DIR=$PWD
 VENV_DIR=$MAIN_DIR/venv
