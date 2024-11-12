@@ -487,16 +487,16 @@
   },
 {
     "date": "novembre 2024",
-    "title": "liens 8",
-    "description": "Quelques liens",
-    "name": "liens_8",
+    "title": "idées cadeaux",
+    "description": "Quelque idées cadeaux pour 2024",
+    "name": "idées_cadeaux_2024",
     "published": true
   },
 {
     "date": "novembre 2024",
-    "title": "idées cadeaux",
-    "description": "Quelque idées cadeaux pour 2024",
-    "name": "idées_cadeaux_2024",
+    "title": "Alice",
+    "description": "Une idée de roman que je n'aurai de toutes façons pas le temps d'écrire",
+    "name": "Alice",
     "published": true
   }
 ]
