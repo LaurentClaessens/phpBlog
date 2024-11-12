@@ -463,5 +463,19 @@
     "description": "Quand ona bu, quand on est fatigué, et quand on est pressé",
     "name": "voiture_pressé",
     "published": true
+  },
+  {
+    "date": "Février 2024",
+    "title": "Démasquer les zombies philosophiques",
+    "description": "divulgâchi : tu es un zombie philosophique",
+    "name": "zombie_philosophique",
+    "published": true
+  },
+  {
+    "date": "octobre 2024",
+    "title": "Intrication quantique et mesure",
+    "description": "Deux articles qui expliquent que la mesure est une intrication entre le système et l'appareil de mesure",
+    "name": "intrication_mesure",
+    "published": true
   }
 ]
