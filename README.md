@@ -5,7 +5,7 @@ Comme vous pouvez le voir en [vous abonnant](http://laurent.claessens-donadello.
 ## Workfow
 
 - Fill `articles.json` 
-- Create the markdown file in `articles_src`
+- Create the markdown file in `texts`
 - `./my_blog.py`
 - Check the build file
 - `./deploy_ovh.py`

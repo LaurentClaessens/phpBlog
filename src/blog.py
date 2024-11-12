@@ -19,11 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 """Describe my blog."""
 
+
 from pathlib import Path
 import shutil
 from src.article_summary import ArticleSummary
-
 dprint = print
+
 
 class Blog(object):
     """
@@ -34,22 +35,19 @@ class Blog(object):
         one "channel" element.It is computed only once, and
         then can be modified (by adding articles for examples).
     """
+
     def __init__(self):
         self.article_list = []
         self.main_dir = Path('.').resolve()
         self.build_dir = self.main_dir / "build"
         self.build_html_dir = self.build_dir / "html"
-        self.src_dir = self.main_dir / "articles_src"
+        self.src_dir = self.main_dir / "texts"
 
         self.build_dir.mkdir(parents=True, exist_ok=True)
         self.build_html_dir.mkdir(parents=True, exist_ok=True)
 
-    def add_article(self, article):
-        """
-        Add an article to the flux.
-
-        @param {ArticleSummary} `article`
-        """
+    def add_article(self, article: ArticleSummary):
+        """Add an article to the flux."""
         self.article_list.append(article)
         article.build()
 
@@ -59,7 +57,7 @@ class Blog(object):
             article.build()
         self.write_xml()
         src_css = self.main_dir / "articles.css"
-        shutil.copy(src_css, self.build_dir )
+        shutil.copy(src_css, self.build_dir)
 
     def older_links(self):
         """Return the html code for the list of older articles."""
