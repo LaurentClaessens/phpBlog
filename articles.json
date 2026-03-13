@@ -496,7 +496,63 @@
     "date": "novembre 2024",
     "title": "Alice",
     "description": "Une idée de roman que je n'aurai de toutes façons pas le temps d'écrire",
-    "name": "Alice",
+    "name": "alice",
     "published": true
-  }
+  },
+{
+    "date": "novembre 2024",
+    "title": "Question probablement facile d'analyse fonctionnelle",
+    "description": "Une question à propos d'une affirmation en préambule de l'inégalité intégrale de Minkowsky.",
+    "name": "question_1",
+    "published": true
+  },
+{
+    "date": "janvier 2025",
+    "title": "liens 9",
+    "description": "Quelques liens en vrac",
+    "name": "liens_9",
+    "published": true
+  },
+{
+    "date": "janvier 2025",
+    "title": "youtube pas trop pisté",
+    "description": "Comment télécharger des vidéos youtube sans être trop pisté",
+    "name": "youtube_pas_trop_pisté",
+    "published": true
+  },
+{
+    "date": "février 2025",
+    "title": "le PS a raison de ne pas faire tomber le gouvernement",
+    "description": "Khrouchtchev a eu raison",
+    "name": "le_ps_et_Khrouchtchev",
+    "published": true
+  },
+{
+    "date": "juin 2025",
+    "title": "Prédictions Dragon Ball multiverse",
+    "description": "Super sayan normal et Végéto.",
+    "name": "dbm_deux_théories",
+    "published": true
+  },
+{
+    "date": "aout 2025",
+    "title": "Hélène ou l'innocuité de l'ennui",
+    "description": "Une nouvelle qui démarre dans le style de Sade",
+    "name": "hélène_nouvelle",
+    "published": true
+  },
+{
+    "date": "aout 2025",
+    "title": "Écriture avec chatGPT",
+    "description": "Retour d'expérience",
+    "name": "hélène_commentaires",
+    "published": true
+  },
+{
+    "date": "octobre 2025",
+    "title": "Pas fan de pistes cyclables",
+    "description": "Le but n'est pas qu'il y ait plus de vélos, mais qu'il y ait moins de voitures.",
+    "name": "pas_fan_pistes_cyclables",
+    "published": true
+}
 ]
